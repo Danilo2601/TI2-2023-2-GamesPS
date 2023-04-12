@@ -1,0 +1,331 @@
+Informações do Projeto
+TÍTULO DO PROJETO
+
+...... COLOQUE AQUI O SEU TEXTO ......
+
+CURSO
+
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Participantes
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Inclua a lista dos membros da equipe com seus nomes completos.
+
+Os membros do grupo são:
+
+Fulano da Silva
+Ciclano Albuquerque
+Estrutura do Documento
+Informações do Projeto
+Participantes
+Estrutura do Documento
+Introdução
+Problema
+Objetivos
+Justificativa
+Público-Alvo
+Especificações do Projeto
+Personas, Empatia e Proposta de Valor
+Histórias de Usuários
+Requisitos
+Requisitos Funcionais
+Requisitos não Funcionais
+Restrições
+Projeto de Interface
+User Flow
+Wireframes
+Metodologia
+Divisão de Papéis
+Ferramentas
+Controle de Versão
+############## SPRINT 1 ACABA AQUI #############
+Projeto da Solução
+Tecnologias Utilizadas
+Arquitetura da solução
+Avaliação da Aplicação
+Plano de Testes
+Ferramentas de Testes (Opcional)
+Registros de Testes
+Referências
+Introdução
+Problema
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+
+Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+
+Links Úteis:
+
+Objetivos, Problema de pesquisa e Justificativa
+Matriz Certezas, Suposições e Dúvidas
+Brainstorming
+Objetivos
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+
+Links Úteis:
+
+Objetivo geral e objetivo específico: como fazer e quais verbos utilizar
+Justificativa
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+
+O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+
+Links Úteis:
+
+Como montar a justificativa
+Público-Alvo
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+
+Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+
+Links Úteis:
+
+Público-alvo: o que é, tipos, como definir seu público e exemplos
+Qual a diferença entre público-alvo e persona?
+Especificações do Projeto
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+
+Personas, Empatia e Proposta de Valor
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Relacione as personas identificadas no seu projeto, os respectivos mapas de empatia e mapas da proposta de valor. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+
+Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+
+Links Úteis:
+
+Persona x Público-alvo
+O que é persona?
+Rock Content
+Hotmart
+Mapa de Empatia
+Como fazer um mapa de empatia - Vídeo
+Canvas da Proposta de Valor
+Exemplo de Persona
+
+Exemplo de Persona
+
+Fonte: Como criar uma persona para o seu negócio
+
+Exemplo de Proposta de Valor Exemplo da Proposta de Valor
+
+Histórias de Usuários
+Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+
+EU COMO... PERSONA	QUERO/PRECISO ... FUNCIONALIDADE	PARA ... MOTIVO/VALOR
+Usuário do sistema	Registrar minhas tarefas	Não esquecer de fazê-las
+Administrador	Alterar permissões	Permitir que possam administrar contas
+Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+
+Links Úteis:
+
+Histórias de usuários com exemplos e template
+Como escrever boas histórias de usuário (User Stories)
+Requisitos
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+
+Requisitos Funcionais
+ID	Descrição do Requisito	Prioridade
+RF-001	Permitir que o usuário cadastre tarefas	ALTA
+RF-002	Emitir um relatório de tarefas no mês	MÉDIA
+Requisitos não Funcionais
+ID	Descrição do Requisito	Prioridade
+RNF-001	O sistema deve ser responsivo para rodar em um dispositivos móvel	MÉDIA
+RNF-002	Deve processar requisições do usuário em no máximo 3s	BAIXA
+Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+
+Requisitos Funcionais (RF): correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
+
+Requisitos Não Funcionais (RNF): correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
+
+Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+
+Links Úteis:
+
+O que são Requisitos Funcionais e Requisitos Não Funcionais?
+O que são requisitos funcionais e requisitos não funcionais?
+Restrições
+O projeto está restrito pelos itens apresentados na tabela a seguir.
+
+ID	Restrição
+01	O projeto deverá ser entregue até o final do semestre
+02	Não pode ser desenvolvido um módulo de backend
+Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+
+Links Úteis:
+
+O que são Requisitos Funcionais e Requisitos Não Funcionais?
+O que são requisitos funcionais e requisitos não funcionais?
+Projeto de Interface
+...... COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
+
+Apresente as principais interfaces da solução. Discuta como foram elaboradas de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas Especificações do Projeto.
+
+User Flow
+...... INCLUA AQUI O DIAGRAMA COM O FLUXO DO USUÁRIO NA APLICAÇÃO ......
+
+Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+
+Links Úteis:
+
+User Flow: O Quê É e Como Fazer?
+User Flow vs Site Maps
+Top 25 User Flow Tools & Templates for Smooth
+Exemplo:
+
+Exemplo de UserFlow
+
+Wireframes
+...... INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+
+Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
+
+Links Úteis:
+
+Ferramentas de Wireframes
+Figma
+Adobe XD
+MarvelApp
+Exemplo:
+
+Exemplo de Wireframe
+
+Metodologia
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Nesta parte do documento, você deve apresentar a metodologia adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+
+Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+
+Links Úteis:
+
+Tutorial Trello
+Gestão ágil de projetos com o Trello
+Gerência de projetos - Trello com Scrum
+Tutorial Slack
+Divisão de Papéis
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Apresente a divisão de papéis e tarefas entre os membros do grupo.
+
+Links Úteis:
+
+11 Passos Essenciais para Implantar Scrum no seu Projeto
+Scrum em 9 minutos
+Ferramentas
+...... COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO ......
+
+Ambiente	Plataforma	Link de Acesso
+Processo de Design Thinkgin	Miro	https://miro.com/XXXXXXX
+Repositório de código	GitHub	https://github.com/XXXXXXX
+Hospedagem do site	Heroku	https://XXXXXXX.herokuapp.com
+Protótipo Interativo	MavelApp ou Figma	https://figma.com/XXXXXXX
+Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+
+As ferramentas empregadas no projeto são:
+
+Editor de código.
+Ferramentas de comunicação
+Ferramentas de diagramação
+Plataforma de hospedagem
+O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+
+Links Úteis - Hospedagem:
+
+Getting Started with Heroku
+Crie seu Site com o HostGator
+GoDady
+GitHub Pages
+Controle de Versão
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada. A ferramenta de controle de versão adotada no projeto foi o Git, sendo que o Github foi utilizado para hospedagem do repositório upstream.
+
+O projeto segue a seguinte convenção para o nome de branchs:
+
+master: versão estável já testada do software
+unstable: versão já testada do software, porém instável
+testing: versão em testes do software
+dev: versão de desenvolvimento do software
+Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
+
+bugfix: uma funcionalidade encontra-se com problemas
+enhancement: uma funcionalidade precisa ser melhorada
+feature: uma nova funcionalidade precisa ser introduzida
+Links Úteis:
+
+Tutorial GitHub
+Git e Github
+5 Git Workflows & Branching Strategy to deliver better code
+Exemplo - GitHub Feature Branch Workflow:
+
+Exemplo de Wireframe
+
+############## SPRINT 1 ACABA AQUI #############
+Projeto da Solução
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Tecnologias Utilizadas
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+
+Inclua os diagramas de User Flow, esboços criados pelo grupo (stoyboards), além dos protótipos de telas (wireframes). Descreva cada item textualmente comentando e complementando o que está apresentado nas imagens.
+
+Arquitetura da solução
+...... COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+
+Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
+
+Exemplo do diagrama de Arquitetura:
+
+Exemplo de Arquitetura
+
+Avaliação da Aplicação
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+
+Plano de Testes
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+
+Links Úteis:
+
+IBM - Criação e Geração de Planos de Teste
+Práticas e Técnicas de Testes Ágeis
+Teste de Software: Conceitos e tipos de testes
+Ferramentas de Testes (Opcional)
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Comente sobre as ferramentas de testes utilizadas.
+
+Links Úteis:
+
+Ferramentas de Test para Java Script
+UX Tools
+Registros de Testes
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+
+Referências
+...... COLOQUE AQUI O SEU TEXTO ......
+
+Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+
+Links Úteis:
+
+Formato ABNT
+Referências Bibliográficas da ABNT
