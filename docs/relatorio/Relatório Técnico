@@ -1,16 +1,20 @@
 Informações do Projeto
 TÍTULO DO PROJETO
 
-...... COLOQUE AQUI O SEU TEXTO ......
+Não saber o que jogar
 
 CURSO
 
-...... COLOQUE AQUI O SEU TEXTO ......
+1º Período - Ciência da Computação - Campus Coração Eucarístico - PUC Minas
 
 Participantes
-...... COLOQUE AQUI O SEU TEXTO ......
+- Arthur Clemente Machado
+- Danilo Paris Bastos
+- Diego Moreira Rocha
+- Gabriel Cunha Schlegel 
+- Iago Fereguetti Ribeiro
+- Pedro Augusto de Paula Ferreira dos Santos Souza
 
-Inclua a lista dos membros da equipe com seus nomes completos.
 
 Os membros do grupo são:
 
@@ -49,51 +53,21 @@ Ferramentas de Testes (Opcional)
 Registros de Testes
 Referências
 Introdução
+  
 Problema
-...... COLOQUE AQUI O SEU TEXTO ......
-
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-Links Úteis:
-
-Objetivos, Problema de pesquisa e Justificativa
-Matriz Certezas, Suposições e Dúvidas
-Brainstorming
+  Problemas sobre achar de forma dinâmica e fácil um jogo de interesse do usuário, para assim otimizar o tempo e aumentar a gama de conhecimento entre os jogos diponíveis. Normalmente pessoas que gostam de jogos digitais sofrem dessa dor. O contexto se passa em um ambiente virtual. 
+  
 Objetivos
-...... COLOQUE AQUI O SEU TEXTO ......
+   Desenvolver um software para solucionar o problema da complexidade de achar um jogo interessante para jogar. Dentro deste objetivo, destacam-se a meta de se criar um ambiente intuitivo, onde achar jogos seja algo simples e prático e interativo, onde os usuários se conectem em comunidades específicas para deixar a dinâmica mais eficiente como um todo.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
-
-Links Úteis:
-
-Objetivo geral e objetivo específico: como fazer e quais verbos utilizar
 Justificativa
-...... COLOQUE AQUI O SEU TEXTO ......
+  A motivação do grupo para trabalhar com essa problemática envolve primeiramente a paixão dos membros por jogar e o fato da dificuldade para encontrar jogos sejam um problema de nossas vidas também. Também envolve uma análise, tanto pela nossa experiência quanto pelas entrevistas, que aponta o quão abrangente podem ser os mecanismos de filtragem do gêneros de jogos e o quão importante é a união das comunidades para que a procura de jogos seja mais direcionada e interativa. 
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-Links Úteis:
-
-Como montar a justificativa
 Público-Alvo
-...... COLOQUE AQUI O SEU TEXTO ......
+  O público-alvo do nosso software é essencialmente os usuários de jogos. Tais indivíduos envolvem pessoas que jogam ou tem a intenção de começar a adentrar ao mundo dos games. Podem abranger pessoas de todas as idades, estado-civil e formação. Nosso software além disso, terá um enfoque também, nos indivíduos apaixonados por jogar, que possuem uma rotina apertada e um poder de compra limitado. 
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
-
-Links Úteis:
-
-Público-alvo: o que é, tipos, como definir seu público e exemplos
-Qual a diferença entre público-alvo e persona?
 Especificações do Projeto
-...... COLOQUE AQUI O SEU TEXTO ......
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+  Nessa parte do documento teremos uma visão mais técnica do nosso projeto. As informações serão trazidas dos nosso grupos de interação entre membros, da plataforma “Miro”, na qual organizamos nossas ideias e prioridades e do conteúdo retirado das entrevistas que fizemos com possíveis clientes do nosso software. 
 
 Personas, Empatia e Proposta de Valor
 ...... COLOQUE AQUI O SEU TEXTO ......
