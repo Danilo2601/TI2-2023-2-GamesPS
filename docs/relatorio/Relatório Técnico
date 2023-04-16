@@ -101,45 +101,37 @@ Usuário do sistema	Registrar minhas tarefas	Não esquecer de fazê-las
 Administrador	Alterar permissões	Permitir que possam administrar contas
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-Links Úteis:
 
-Histórias de usuários com exemplos e template
-Como escrever boas histórias de usuário (User Stories)
 Requisitos
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
 Requisitos Funcionais
-ID	Descrição do Requisito	Prioridade
-RF-001	Permitir que o usuário cadastre tarefas	ALTA
-RF-002	Emitir um relatório de tarefas no mês	MÉDIA
+RF-001 Sistema de Recomendação por Bolhas BAIXA
+RF-002 Chat Privado entre Usuários BAIXA
+RF-003 Notificação de Promoção na Lista de Desejos BAIXA
+RF-004 Lista de Desejos MEDIA
+RF-005 Página de Pesquisa MEDIA
+RF-006 Exposição de Jogos Indie ALTA
+RF-007 Chat de Comunidade ALTA
+RF-008 Histórico de Preços BAIXA
+RF-009 Recomendação de Fácil Acesso Nichada MEDIA
+RF-010 Filtragem Específica ALTA
+RF-011 Classificação Nichada ALTA
+RF-012 Página de Usuário BAIXA
+RF-013 Página de Comunidade MEDIA
+RF-014 Página Individual do Jogo ALTA
+RF-015 Página Principal ALTA 
 Requisitos não Funcionais
-ID	Descrição do Requisito	Prioridade
-RNF-001	O sistema deve ser responsivo para rodar em um dispositivos móvel	MÉDIA
-RNF-002	Deve processar requisições do usuário em no máximo 3s	BAIXA
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+RNF-001 O sistema deve ser responsivo ALTA
+RNF-002 O sistema deve possuir um banco de dados eficaz ALTA 
 
-Requisitos Funcionais (RF): correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-
-Requisitos Não Funcionais (RNF): correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
-
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-Links Úteis:
-
-O que são Requisitos Funcionais e Requisitos Não Funcionais?
-O que são requisitos funcionais e requisitos não funcionais?
 Restrições
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ID	Restrição
 01	O projeto deverá ser entregue até o final do semestre
 02	Não pode ser desenvolvido um módulo de backend
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-Links Úteis:
-
-O que são Requisitos Funcionais e Requisitos Não Funcionais?
-O que são requisitos funcionais e requisitos não funcionais?
 Projeto de Interface
 ...... COLOQUE AQUI O SEU TEXTO DE INTRODUÇÃO ......
 
@@ -175,27 +167,17 @@ Exemplo:
 Exemplo de Wireframe
 
 Metodologia
-...... COLOQUE AQUI O SEU TEXTO ......
+  O grupo se iniciou com papel e caneta. Listamos quais eram nossas dúvidas, certezas e suposições sobre a problemática. Em seguida, desenvolvemos nosso Mapa de Stakeholders aonde categorizamos as Pessoas Fundamentais, Importantes e Influenciadoras do projeto (respectivamente).
+  O próximo passo foi entrevistar possíveis usuários para o projeto. Nossos entrevistados foram conhecidos (pelo qual fizemos entrevistas online pelas plataformas do Discord e do Whatsapp) e colegas do Curso de Ciência da Computação. Em seguida, fizemos um processo de Entrevista Qualitativa, aonde selecionamos uma entrevista considerada produtiva e fizemos uma análise aprofundada, listando o que nos surpreendeu e o que pudemos aprender e priorizar pelas falas do entrevistado.
+  Através dessas noções que obtivemos, pudemos criar seis personas, que iriam simbolizar futuros usuários do nosso software com diferentes objetivos, sonhos, problemas e características.
+  Portanto, chegou a hora de partir para as soluções. Cada membro do grupo, através da plataforma Miro, apresentou uma ideia para tornar nosso software um produto de qualidade. Tais ideias, nós categorizamos em diferentes prioridades baseadas em custo por impacto. Ou seja, analisamos cada ideia para entender qual era seu custo (alto ou baixo) e seu impacto no produto final (alto ou baixo).
+  Por fim, para finalizar nossa primeira Sprint, desenvolvemos um wireframe do site. Assim, tivemos uma visão mais prática e dinâmica de como iremos tornar cada ideia uma realidade.
 
-Nesta parte do documento, você deve apresentar a metodologia adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
-
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
-
-Links Úteis:
-
-Tutorial Trello
-Gestão ágil de projetos com o Trello
-Gerência de projetos - Trello com Scrum
-Tutorial Slack
 Divisão de Papéis
-...... COLOQUE AQUI O SEU TEXTO ......
+  Diego Moreira e Danilo Paris – Relatório Técnico
+  Arthur Clemente e Iago Fereguetti – Apresentação do Projeto
+  Pedro Augusto e Gabriel Schlegel – Wireframe do Projeto 
 
-Apresente a divisão de papéis e tarefas entre os membros do grupo.
-
-Links Úteis:
-
-11 Passos Essenciais para Implantar Scrum no seu Projeto
-Scrum em 9 minutos
 Ferramentas
 ...... COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO ......
 
