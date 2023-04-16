@@ -15,11 +15,6 @@ Participantes
 - Iago Fereguetti Ribeiro
 - Pedro Augusto de Paula Ferreira dos Santos Souza
 
-
-Os membros do grupo são:
-
-Fulano da Silva
-Ciclano Albuquerque
 Estrutura do Documento
 Informações do Projeto
 Participantes
@@ -72,11 +67,11 @@ Especificações do Projeto
 Personas, Empatia e Proposta de Valor
   As personas que foram entrevistadas e auxiliaram no direcionamento do projeto estão listadas abaixo:
 
-![Persona 1](docs/relatorio/images/Persona 1.jpg)
-![Persona 2](docs/relatorio/images/Persona 2.jpg)
-![Persona 3](docs/relatorio/images/Persona 3.jpg)
-![Persona 4](docs/relatorio/images/Perosna 4.jpg)
-![Persona 5](docs/relatorio/images/Persona 5.jpg)
+> ![Persona 1](docs/relatorio/images/Persona 1.jpg)
+> ![Persona 2](docs/relatorio/images/Persona 2.jpg)
+> ![Persona 3](docs/relatorio/images/Persona 3.jpg)
+> ![Persona 4](docs/relatorio/images/Perosna 4.jpg)
+> ![Persona 5](docs/relatorio/images/Persona 5.jpg)
 
 Requisitos
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
