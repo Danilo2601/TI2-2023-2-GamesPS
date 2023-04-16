@@ -72,11 +72,11 @@ Especificações do Projeto
 Personas, Empatia e Proposta de Valor
   As personas que foram entrevistadas e auxiliaram no direcionamento do projeto estão listadas abaixo:
 
-![Persona 1](relatorio/images/Persona 1.jpg)
-![Persona 2](relatorio/images/Persona 2.jpg)
-![Persona 3](relatorio/images/Persona 3.jpg)
-![Persona 4](relatorio/images/Perosna 4.jpg)
-![Persona 5](relatorio/images/Persona 5.jpg)
+![Persona 1](docs/relatorio/images/Persona 1.jpg)
+![Persona 2](docs/relatorio/images/Persona 2.jpg)
+![Persona 3](docs/relatorio/images/Persona 3.jpg)
+![Persona 4](docs/relatorio/images/Perosna 4.jpg)
+![Persona 5](docs/relatorio/images/Persona 5.jpg)
 
 Histórias de Usuários
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -121,10 +121,10 @@ Projeto de Interface
 O nosso projeto de Interface consiste em uma tela principal, com informações iniciais sobre os produtos de maior importância do momento. Uma tela de usuário, com informações do usuário e uma lista de desejos, para das destaque fácil aos itens de maior interesse do usuário. Páginas próprias de cada jogo, com informaçoes das suas devidas comunidades e etc. E por fim uma página de pesquisa, feita para buscar os jogos que o usuário esteja procurando. Em todas as abas projetamos um sistema de fácil entendimento para e fácil manuseio do cliente. 
 
 User Flow
-![User Flow](relatorio/images/User Flow.jpg)
+![User Flow](docs/relatorio/images/User Flow.jpg)
 
 Wireframes
-!(Wireframe do Projeto)[relatorio/images/Wireframe.jpg)
+![Wireframe do Projeto](docs/relatorio/images/Wireframe.jpg)
 
 Metodologia
   O grupo se iniciou com papel e caneta. Listamos quais eram nossas dúvidas, certezas e suposições sobre a problemática. Em seguida, desenvolvemos nosso Mapa de Stakeholders aonde categorizamos as Pessoas Fundamentais, Importantes e Influenciadoras do projeto (respectivamente).
