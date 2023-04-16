@@ -111,7 +111,7 @@ Personas, Empatia e Proposta de Valor
 
 ![Persona 3](images/Persona3.jpg)
 
-![Persona 4](images/Perosna4.jpg)
+![Persona 4](images/Persona4.jpg)
 
 ![Persona 5](images/Persona5.jpg)
 
