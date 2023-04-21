@@ -157,6 +157,22 @@ RNF-001 O sistema deve ser responsivo ALTA
 
 RNF-002 O sistema deve possuir um banco de dados eficaz ALTA 
 
+
+Funcionalidades a criar
+
+F-001 Chat Privado entre Usuários BAIXA
+F-002 Notificação de Promoção na Lista de Desejos BAIXA
+F-003 Lista de Desejos MEDIA
+F-004 Página de Pesquisa MEDIA
+F-005 Exposiçao aleartoria baseada em semanas ALTA
+F-006 Chat de Comunidade ALTA
+F-007 Histórico de Preços BAIXA
+F-008 Filtragem Específica ALTA
+F-009 Login MEDIA
+F-010 Personalizaçao da pagina de usuario BAIXA
+F-011 Avaliaçao de postagens/comentarios ALTA
+F-012 Nota de jogos ALTA
+
 Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
