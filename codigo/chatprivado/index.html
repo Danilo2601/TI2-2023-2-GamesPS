@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Chat Privado</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+</head>
+
+<body>
+    <ul id="messages"></ul>
+    <img id="user-img" src="imgs/user.png" alt="">
+    <img id="notification" src="imgs/image_png-removebg-preview.png" alt="">
+    <div id="chat">
+        <button onclick="aparecerChat()" id="btn">Chat</button>
+    </div>
+
+    <div id="chat-aberto">
+        <button onclick="fecharChat()" id="btn-chatAberto">Chat</button>
+        <input id="search" type="text" placeholder="Search...">
+
+        <a id="btn-contact" onclick="abrirChat()" href="#">
+            <div id="contact">
+                <img id="user-imgOpen1" src="imgs/user.png" alt="">
+                <img id="notificationOpen1" src="imgs/image_png-removebg-preview.png" alt="">
+                <p id="userName1">-UserNickname-</p>
+                <p id="lastmassage1">-Last Message-</p>
+                <p id="date1">date</p>
+                <hr id="linha1">
+            </div>
+        </a>
+
+        <a id="btn-contact" onclick="abrirChat()" href="#">
+            <div id="contact2">
+                <img id="user-imgOpen2" src="imgs/user.png" alt="">
+                <p id="userName2">-UserNickname-</p>
+                <p id="lastmassage2">-Last Message-</p>
+                <p id="date2">date</p>
+                <hr id="linha2">
+            </div>
+        </a>
+    </div>
+
+    <div id="contato-aberto">
+        <img id="user-imgContact" src="imgs/user.png" alt="">
+        <p id="usernameContact">-UserNickname-</p>
+        <button onclick="voltar()" id="btnVoltar">X</button>
+        <div id="tela">
+            <hr id="linha-tela">
+            <input id="search-tela" type="text" placeholder="Send a message">
+            <div id="mensagem">
+                <!-- Mensagens aqui -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/contatos.js"></script>
+    <script src="/js/message.js"></script>
+</body>
+
+</html>
