@@ -1,0 +1,184 @@
+body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  
+  /* ------------------------------------------------------------------ */
+  /* Card */
+  .logo {
+    max-width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    aspect-ratio: 16/9;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 33.33%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+  
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(243, 235, 235, 0.415);
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para a barra de jogo */
+  .barra-azul {
+    border-bottom: #144190 10px solid;
+  }
+  
+  /* Estilo para a barra de comunidade */
+  .barra-laranja {
+    border-bottom: #F24726 10px solid;
+  }
+  
+  /* -------------------------------------------------------- */
+  /* houver */
+  
+  .card::before,
+  .card::after {
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    transform-origin: left top;
+    transform: scaleX(0);
+    transition: all var(--cover-timing) var(--cover-ease);
+  }
+  
+  .card:hover img,
+  .card:focus img {
+    transform: scale(1.1);
+    filter: brightness(0.6); /* Adicionado para escurecer a imagem */
+  }
+  
+  .card:nth-of-type(1) {
+    --highlight: coral;
+  }
+  
+  .card:nth-of-type(2) {
+    --highlight: #56ffe5;
+  }
+  
+  
+  
+  /* -------------------------------------------------------- */
+  /* Header */
+  
+  /* Style the header with a grey background and some padding */
+  .header {
+    margin: 0px;
+    overflow: hidden;
+    background-color: #09081C;
+    padding: 20px 10px;
+    color: white;
+  }
+  
+  /* Style the header links */
+  .header a {
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+  /* Style the active/current link*/
+  .header a.ativo {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  
+  /* ------------------------------------------------------------------ */
+  /* footer */
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #09081C;
+    color: white;
+    text-align: center;
+    height: 100px;
+  }
