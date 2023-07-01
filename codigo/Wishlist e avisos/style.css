@@ -1,0 +1,96 @@
+.grande
+{
+    display: block;
+    width: 80%;
+    background-color: midnightblue;
+    height: 2000px;
+    border-radius: 7px;
+    float: right;
+    margin-top: 10px;   
+}
+
+.barra
+{
+    width:100%;
+    height: 150px;
+    background-color: crimson;
+}
+
+.amigos
+{
+    width: 100%;
+    border: 3px;
+    height: 10%;
+    border-color: black;
+    border-style: solid;
+}
+
+.title
+{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 1px;
+    width: max-content;
+}
+
+.wishlist
+{
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: max-content;
+    position: relative;
+}
+
+
+.nombre
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 8px;
+    z-index: 20009;
+    color: white;
+    background-color: black;
+}
+
+.promo
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 8px;
+    z-index: 20009;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
+
+.vengeance
+{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #ddc913;
+}
+
+.revenge
+{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #144190;
+}
+
