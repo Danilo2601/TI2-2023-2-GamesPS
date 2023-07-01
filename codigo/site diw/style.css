@@ -1,0 +1,123 @@
+/* Formatacao da Estrutura */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+  background: url(imgs/logo.png) no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main {
+  background-color: blanchedalmond;
+  width: 70%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+    display: none;
+}
+
+aside {
+  background-color: lightpink;
+  width: 30%;
+  float: left;
+}
+
+/* Componente Menu Principal */
+.caixa-menuprincipal {
+}
+
+.caixa-menuprincipal ul {
+  list-style-type: none;
+}
+
+.caixa-menuprincipal ul li {
+  display: inline-block;
+}
+
+.caixa-menuprincipal ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: burlywood;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.caixa-menuprincipal ul li a:hover {
+  background-color: cornflowerblue;
+}
+
+/* Componente Postagem */
+.caixa-post {
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.caixa-post img {
+    display: block;
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.caixa-post h4 {
+    font-size: 70%;
+    color: gray;
+    margin: 5px 0;
+}
+
+.caixa-post p {
+    font-size: 80%;
+    color: darkolivegreen;
+}
+
+.caixa-post h4 span:nth-child(3) {
+    background-color: navy;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Componente Categoria */
+.caixa-categoria {
+    padding: 20px;
+}
+
+.caixa-categoria ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+/* Componente Pesquisa */
+.caixa-pesquisa {
+    padding: 20px;
+}
+
+.caixa-categoria ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.caixa-categoria ul li a:visited {
+  color: red;
+}
+
+footer {
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
+}
