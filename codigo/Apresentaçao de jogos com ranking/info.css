@@ -1,0 +1,188 @@
+h4.W {
+    font-weight: bold;
+    color: white;
+    display: inline;
+}
+
+h4#name {
+    display: inline;
+    color: #144190;
+    margin-right: 100px;
+}
+
+#plat {
+    align-self: flex-end;
+    background-color: #144190;
+    color: #09081c;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+}
+
+#info {
+    width: fit-content;
+    height: 400px;
+
+}
+
+#expand {
+    position: absolute;
+    width: 80px;
+    background-color: #144190;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#plat label {
+    width: 100%;
+}
+
+input:checked~#plat #expand {
+    display: block;
+}
+
+input:checked~#plat label {
+    border-bottom: #09081c solid 2px;
+}
+
+input:not(checked)~#plat #expand {
+    display: none;
+}
+
+#sinopsys {
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: 69%;
+    font-size: small;
+    color: #7f7f7f;
+    margin-bottom: 5px;
+}
+
+#price {
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #144190;
+    text-align: center;
+    color: #09081c;
+}
+
+#score {
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    background-color: #144190;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #09081c;
+
+}
+
+button.exp {
+    background-color: transparent;
+    color: #09081c;
+    border: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+}
+
+#avaliation {
+    display: inline;
+    position: relative;
+    float: right;
+    width: 80px;
+}
+
+#like {
+    display: inline;
+    color: green;
+    background-color: transparent;
+    border: none;
+    width: 40%;
+
+}
+
+#dislike {
+    display: inline;
+    color: red;
+    background-color: transparent;
+    border: none;
+    width: 40%;
+}
+
+#bug {
+    margin: 50px;
+}
+
+#debugger {
+    width: 50px;
+    border: solid #144190 3px;
+    background-color: #144190;
+    height: 27px;
+    scrollbar-base-color: #144190;
+    color: #09081c;
+    font-weight: bold;
+    border-bottom-left-radius: 5px ;
+    border-top-left-radius: 5px ;
+}
+
+#pag {
+    margin-left: 10px ;
+    height: 27px;
+    display: inline;
+    color: #09081c;
+    font-weight: bold;
+    
+}
+
+#debugger[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#debugger[type=number]::-webkit-inner-spin-button,
+#debugger[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#debugger[type="number"] {
+    outline: none;
+    height: 27px;
+    padding: 1%;
+    border: none;
+}
+
+
+.but {
+    height: 27px;
+    outline: none;
+    border: none;
+    background-color: #144190;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+    color: #09081c;
+    font-weight: bold;
+    width: 20px;
+}
+
+.but.minus {
+    border-right: 0px  black;
+    
+}
+
+.but.plus {
+    border-right: 1px  black;
+    border-bottom-right-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
