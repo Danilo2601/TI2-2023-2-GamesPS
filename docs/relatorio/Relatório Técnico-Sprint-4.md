@@ -261,7 +261,9 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 Inclua os diagramas de User Flow, esboços criados pelo grupo (stoyboards), além dos protótipos de telas (wireframes). Descreva cada item textualmente comentando e complementando o que está apresentado nas imagens.
 
 Arquitetura da solução
-...... COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+
+![Minimalist Process Flow Chart Cycle Diagram](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/73e931b0-4bce-4443-a384-e7d71e597599)
+
 
 Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
 
