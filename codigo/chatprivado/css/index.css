@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 
-#search{
+#search {
     border-radius: 7px;
     position: absolute;
     bottom: 300px;
@@ -71,21 +71,21 @@
     transform: translateY(200px);
 }
 
-#user-imgOpen1{
+#user-imgOpen1 {
     bottom: 240px;
     right: 300px;
     width: 50px;
     height: 50px;
 }
 
-#notificationOpen1{
+#notificationOpen1 {
     position: relative;
     right: 20px;
     width: 20px;
     height: 20px;
 }
 
-#linha1{
+#linha1 {
     height: 2px;
     background-color: #144190;
     position: relative;
@@ -95,35 +95,35 @@
     border: none;
 }
 
-#userName1{
+#userName1 {
     color: #ffffff;
     position: absolute;
     right: 165px;
     bottom: 20px;
 }
 
-#lastmassage1{
+#lastmassage1 {
     color: #808080;
     position: absolute;
     left: 200px;
     bottom: 5px;
 }
 
-#date1{
+#date1 {
     color: #808080;
     position: absolute;
     left: 270px;
     top: 20px;
 }
 
-#user-imgOpen2{
+#user-imgOpen2 {
     bottom: 240px;
     right: 300px;
     width: 50px;
     height: 50px;
 }
 
-#linha2{
+#linha2 {
     height: 2px;
     background-color: #144190;
     position: relative;
@@ -133,21 +133,21 @@
     border: none;
 }
 
-#userName2{
+#userName2 {
     color: #ffffff;
     position: absolute;
     right: 165px;
     bottom: 20px;
 }
 
-#lastmassage2{
+#lastmassage2 {
     color: #808080;
     position: absolute;
     left: 200px;
     bottom: 5px;
 }
 
-#date2{
+#date2 {
     color: #808080;
     position: absolute;
     left: 270px;
@@ -164,7 +164,7 @@
     transform: translateY(0px);
 }
 
-#contact{
+#contact {
     position: absolute;
     right: 10px;
     bottom: 230px;
@@ -172,12 +172,12 @@
     height: 60px;
 }
 
-#contact:hover{
+#contact:hover {
     border-radius: 5px;
     background-color: #04030c;
 }
 
-#contact2{
+#contact2 {
     position: absolute;
     right: 10px;
     bottom: 150px;
@@ -185,12 +185,12 @@
     height: 60px;
 }
 
-#contact2:hover{
+#contact2:hover {
     border-radius: 5px;
     background-color: #04030c;
 }
 
-#contato-aberto{
+#contato-aberto {
     display: none;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -222,7 +222,7 @@
     height: 70px;
 }
 
-#usernameContact{
+#usernameContact {
     color: #ffffff;
     position: absolute;
     right: 130px;
@@ -230,7 +230,7 @@
     font-size: 20px;
 }
 
-#btnVoltar{
+#btnVoltar {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -243,7 +243,7 @@
     border-color: #144190;
 }
 
-#tela{
+#tela {
     position: absolute;
     top: 100px;
     left: 7px;
@@ -252,7 +252,7 @@
     background-color: #aaa9a9;
 }
 
-#linha-tela{
+#linha-tela {
     height: 3px;
     background-color: #144190;
     position: relative;
@@ -262,7 +262,7 @@
     border: none;
 }
 
-#search-tela{
+#search-tela {
     color: #ffffff;
     position: relative;
     height: 30px;
@@ -272,15 +272,20 @@
     background-color: #144190;
 }
 
-#mensagem{
+#mensagem {
     color: #ffffff;
     width: fit-content;
-    padding: 3px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    background-color: #144190;
     position: relative;
     right: 0px;
     bottom: 50px;
     float: right;
+}
+
+.p-mensagem{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #144190;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
