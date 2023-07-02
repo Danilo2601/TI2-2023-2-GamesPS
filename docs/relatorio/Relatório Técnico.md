@@ -115,6 +115,15 @@ Personas, Empatia e Proposta de Valor
 
 ![Persona 5](images/Persona5.jpg)
 
+Histórias de Usuários
+Eu como amante de jogos...
+Quero/preciso de jogos novos para jogar...
+Para me divertir.
+
+Eu como usuário do sistema...
+Quero/preciso comunidades e jogos diversos...
+Para entrar no mundo dos jogos.
+
 Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
@@ -226,30 +235,9 @@ Getting Started with Heroku
 Crie seu Site com o HostGator
 GoDady
 GitHub Pages
+
 Controle de Versão
-...... COLOQUE AQUI O SEU TEXTO ......
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada. A ferramenta de controle de versão adotada no projeto foi o Git, sendo que o Github foi utilizado para hospedagem do repositório upstream.
-
-O projeto segue a seguinte convenção para o nome de branchs:
-
-master: versão estável já testada do software
-unstable: versão já testada do software, porém instável
-testing: versão em testes do software
-dev: versão de desenvolvimento do software
-Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-
-bugfix: uma funcionalidade encontra-se com problemas
-enhancement: uma funcionalidade precisa ser melhorada
-feature: uma nova funcionalidade precisa ser introduzida
-Links Úteis:
-
-Tutorial GitHub
-Git e Github
-5 Git Workflows & Branching Strategy to deliver better code
-Exemplo - GitHub Feature Branch Workflow:
-
-Exemplo de Wireframe
 
 ############## SPRINT 1 ACABA AQUI #############
 Projeto da Solução
