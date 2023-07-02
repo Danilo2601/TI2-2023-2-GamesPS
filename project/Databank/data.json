@@ -77,5 +77,32 @@
             "likes": 1,
             "dislikes": 1
         }
+    },
+    {
+        "id": 4,
+        "name": "Guilty Gear Strive",
+        "company": "ArcSystem Works",
+        "mainImage": "https://cdn.akamai.steamstatic.com/steam/apps/1649880/capsule_616x353.jpg?t=1634717883",
+        "subImages": [
+            "https://i.ytimg.com/vi/iCBwAzKvovg/maxresdefault.jpg",
+            "https://www.guiltygear.com/ggst/jp/wordpress/wp-content/uploads/2021/11/82nCeh3s_04.jpg",
+            "https://www.guiltygear.com/ggst/en/wordpress/wp-content/uploads/2020/09/ss-05.jpg",
+            "https://www.guiltygear.com/ggst/en/wordpress/wp-content/uploads/2020/09/ss-02-3.jpg",
+            "https://www.guiltygear.com/ggst/en/wordpress/wp-content/uploads/2020/09/ss-03-1-1024x576.png",
+            "https://www.guiltygear.com/ggst/en/wordpress/wp-content/uploads/2020/09/ss-02-4.jpg"
+        ],
+        "plataform": [
+            {
+                "name": "Steam",
+                "price": "R$ 86,00"
+            }
+        ],
+        "sinopsys": "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“. The new artistic direction and improved character animations will go beyond anything you’ve seen before in a fighting game!",
+        "score": {
+            "average": 80,
+            "total": 5,
+            "likes": 4,
+            "dislikes": 1
+        }
     }
 ]
