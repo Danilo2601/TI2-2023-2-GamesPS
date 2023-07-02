@@ -109,12 +109,63 @@
                 "price": "R$ 86,00"
             }
         ],
+        "prices": [
+    	{ "date": "2020-01-01", "price": 140 },
+    	{ "date": "2020-02-01", "price": 100 },
+    	{ "date": "2020-02-02", "price": 140 },
+    	{ "date": "2021-02-03", "price": 85 },
+    	{ "date": "2021-02-15", "price": 130 },
+    	{ "date": "2021-03-20", "price": 90 },
+    	{ "date": "2022-02-06", "price": 110 },
+    	{ "date": "2022-03-01", "price": 100 },
+   	{ "date": "2023-04-01", "price": 75 },
+    	{ "date": "2023-05-01", "price": 86 }
+  	    ]
         "sinopsys": "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“. The new artistic direction and improved character animations will go beyond anything you’ve seen before in a fighting game!",
         "score": {
             "average": 80,
             "total": 5,
             "likes": 4,
             "dislikes": 1
+        }
+    },
+    {
+    "id": 5,
+        "name": "The Messenger",
+        "company": "Sabotage Studio",
+        "mainImage": "https://static.wikia.nocookie.net/the-messenger-2018/images/6/6b/Key_Art_1.jpg/revision/latest?cb=20190203082849",
+        "subImages": [
+            "https://jovemnerd.com.br/wp-content/uploads/2018/08/the-messenger-review.jpg",
+            "https://3.bp.blogspot.com/-D-00YQnWydw/W4aMJVWgY-I/AAAAAAAAYjw/OFrIkZLfYlwChuJDX5vw5sPuj5Xr0cKWwCLcBGAs/s1600/themessenger-01.png",
+            "https://www.ultimaficha.com.br/wp-content/uploads/2018/08/The-Messenger-Screen-13.png",
+            "https://cdn.cloudflare.steamstatic.com/steam/apps/764790/ss_a2411df6edd809eaf708b55af0fbe13740199133.1920x1080.jpg?t=1680642181",
+            "https://static.wikia.nocookie.net/the-messenger-2018/images/0/03/Easter_Egg_Screenshot_12.png/revision/latest?cb=20190314063253",
+            "https://jovemnerd.com.br/wp-content/uploads/2018/08/the-messenger-review-jovem-nerd.jpg"
+        ],
+        "plataform": [
+            {
+                "name": "Switch",
+                "price": "R$ 25,00"
+            }
+        ],
+	"prices": [
+    	{ "date": "2020-01-01", "price": 38 },
+    	{ "date": "2020-02-01", "price": 35 },
+    	{ "date": "2020-02-02", "price": 20 },
+    	{ "date": "2021-02-03", "price": 35 },
+    	{ "date": "2021-02-15", "price": 25 },
+    	{ "date": "2021-03-20", "price": 30 },
+    	{ "date": "2022-02-06", "price": 17 },
+    	{ "date": "2022-03-01", "price": 28 },
+   	{ "date": "2023-04-01", "price": 15 },
+    	{ "date": "2023-05-01", "price": 25 }
+  	]
+        "sinopsys": "A young ninja, eager to leave his village and explore the world, experiences the fated day of the demon army attack. The legendary Western Hero appears, driving away the demon army, and tasks the ninja with the role of "The Messenger," who must deliver a scroll to the top of a mountain. ",
+        "score": {
+            "average": 100,
+            "total": 2,
+            "likes": 2,
+            "dislikes": 0
         }
     }
 ]
