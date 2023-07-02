@@ -19,17 +19,47 @@
             }
         ],
         "prices": [
-    { "date": "2020-01-01", "price": 357 },
-    { "date": "2020-02-01", "price": 357 },
-    { "date": "2020-02-02", "price": 357 },
-    { "date": "2021-02-03", "price": 357 },
-    { "date": "2021-02-15", "price": 357 },
-    { "date": "2021-03-20", "price": 357 },
-    { "date": "2022-02-06", "price": 357 },
-    { "date": "2022-03-01", "price": 357 },
-    { "date": "2023-04-01", "price": 357 },
-    { "date": "2023-05-01", "price": 357 }
-  ]
+            {
+                "date": "2020-01-01",
+                "price": 357
+            },
+            {
+                "date": "2020-02-01",
+                "price": 357
+            },
+            {
+                "date": "2020-02-02",
+                "price": 357
+            },
+            {
+                "date": "2021-02-03",
+                "price": 357
+            },
+            {
+                "date": "2021-02-15",
+                "price": 357
+            },
+            {
+                "date": "2021-03-20",
+                "price": 357
+            },
+            {
+                "date": "2022-02-06",
+                "price": 357
+            },
+            {
+                "date": "2022-03-01",
+                "price": 357
+            },
+            {
+                "date": "2023-04-01",
+                "price": 357
+            },
+            {
+                "date": "2023-05-01",
+                "price": 357
+            }
+        ],
         "sinopsys": "The Legend of Zelda: Tears of the Kingdom is a 2023 action-adventure game developed and published by Nintendo for the Nintendo Switch. The sequel to The Legend of Zelda: Breath of the Wild (2017), Tears of the Kingdom retains aspects including the open world environment of Hyrule, which has been expanded to allow for more vertical exploration. Link, the protagonist, joins Princess Zelda to defeat Ganondorf, who seeks to destroy Hyrule. <br>&nbsp&nbspTears of the Kingdom was conceived after ideas for Breath of the Wild downloadable content (DLC) had exceeded its scope. Its development was led by Nintendo's Entertainment Planning & Development (EPD) division, with Breath of the Wild director Hidemaro Fujibayashi and producer Eiji Aonuma reprising their roles. A teaser was shown at E3 2019 with a full reveal at E3 2021. Tears of the Kingdom was initially planned for release in 2022 before being delayed to May 2023. It received acclaim, with praise for its numerous improvements upon its predecessor, expanded open world and features encouraging exploration and experimentation. ",
         "score": {
             "average": 50,
@@ -55,18 +85,48 @@
                 "price": "R$299,90"
             }
         ],
-	    "prices": [
-    	{ "date": "2020-01-01", "price": 299 },
-    	{ "date": "2020-02-01", "price":250 },
-    	{ "date": "2020-02-02", "price": 299 },
-    	{ "date": "2021-02-03", "price":250 },
-    	{ "date": "2021-02-15", "price": 200 },
-    	{ "date": "2021-03-20", "price": 299 },
-    	{ "date": "2022-02-06", "price": 226 },
-    	{ "date": "2022-03-01", "price": 278 },
-   	{ "date": "2023-04-01", "price": 299 },
-    	{ "date": "2023-05-01", "price": 299 }
-  	]
+        "prices": [
+            {
+                "date": "2020-01-01",
+                "price": 299
+            },
+            {
+                "date": "2020-02-01",
+                "price": 250
+            },
+            {
+                "date": "2020-02-02",
+                "price": 299
+            },
+            {
+                "date": "2021-02-03",
+                "price": 250
+            },
+            {
+                "date": "2021-02-15",
+                "price": 200
+            },
+            {
+                "date": "2021-03-20",
+                "price": 299
+            },
+            {
+                "date": "2022-02-06",
+                "price": 226
+            },
+            {
+                "date": "2022-03-01",
+                "price": 278
+            },
+            {
+                "date": "2023-04-01",
+                "price": 299
+            },
+            {
+                "date": "2023-05-01",
+                "price": 299
+            }
+        ],
         "sinopsys": "Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC com conteúdos inéditos no Modo História, melhorias visuais e muito mais.",
         "score": {
             "average": 50,
@@ -94,18 +154,48 @@
                 "price": "R$ 79,00"
             }
         ],
-	    "prices": [
-    	{ "date": "2020-01-01", "price": 120 },
-    	{ "date": "2020-02-01", "price": 88 },
-    	{ "date": "2020-02-02", "price": 120 },
-    	{ "date": "2021-02-03", "price": 105 },
-    	{ "date": "2021-02-15", "price": 78 },
-    	{ "date": "2021-03-20", "price": 100 },
-    	{ "date": "2022-02-06", "price": 95 },
-    	{ "date": "2022-03-01", "price": 70 },
-   	{ "date": "2023-04-01", "price": 85 },
-    	{ "date": "2023-05-01", "price": 79 }
-  	]
+        "prices": [
+            {
+                "date": "2020-01-01",
+                "price": 120
+            },
+            {
+                "date": "2020-02-01",
+                "price": 88
+            },
+            {
+                "date": "2020-02-02",
+                "price": 120
+            },
+            {
+                "date": "2021-02-03",
+                "price": 105
+            },
+            {
+                "date": "2021-02-15",
+                "price": 78
+            },
+            {
+                "date": "2021-03-20",
+                "price": 100
+            },
+            {
+                "date": "2022-02-06",
+                "price": 95
+            },
+            {
+                "date": "2022-03-01",
+                "price": 70
+            },
+            {
+                "date": "2023-04-01",
+                "price": 85
+            },
+            {
+                "date": "2023-05-01",
+                "price": 79
+            }
+        ],
         "sinopsys": "Call down your Titan and get ready for an exhilarating first-person shooter experience in Titanfall® 2! The sequel introduces a new single player campaign that explores the bond between Pilot and Titan. Or blast your way through an even more innovative and intense multiplayer experience - featuring 6 new Titans, deadly new Pilot abilities, expanded customization, new maps, modes, and much more.<br><br>KEY FEATURES<br>Experience a captivating single player story. Titanfall® 2 features a single player campaign packed with action and inventive twists. Play as a Militia rifleman stranded behind enemy lines, who encounters a veteran Vanguard-class Titan. The two must work together to uphold a mission they were never meant to carry out.<br>Enjoy multiplayer action that's second to none. The sequel gives players more of the adrenaline-fueled multiplayer combat they've come to expect from the franchise. Take the fast-paced, first-person action to the next level with more Titans, deadlier Pilot abilities, and much more. And be sure to stand out in the middle of all the chaos with new, expanded Pilot, Titan and loadout personalization options! <br><br>Titanfall™ 2 Ultimate Edition Content<br>The best way to jump into one of the most surprising shooters of 2016 is with the Titanfall™ 2 Ultimate Edition.<br>Ultimate Edition includes Titanfall™ 2 base game, Deluxe Edition content (Scorch & Ion Prime Titans, Deluxe Edition Warpaint for 6 Titans, Deluxe Edition Camo for all Titans, Pilots & Weapons, Deluxe Edition Nose Arts for 6 Titans, Deluxe Edition Callsign), and Jump-Starter content (All Titans unlocked, all Pilot tacticals unlocked, 500 credits to unlock loadouts, cosmetics and gear, 10 2x XP tokens, the Underground R-201 Carbine Warpaint).",
         "score": {
             "average": 50,
@@ -134,17 +224,47 @@
             }
         ],
         "prices": [
-    	{ "date": "2020-01-01", "price": 140 },
-    	{ "date": "2020-02-01", "price": 100 },
-    	{ "date": "2020-02-02", "price": 140 },
-    	{ "date": "2021-02-03", "price": 85 },
-    	{ "date": "2021-02-15", "price": 130 },
-    	{ "date": "2021-03-20", "price": 90 },
-    	{ "date": "2022-02-06", "price": 110 },
-    	{ "date": "2022-03-01", "price": 100 },
-   	{ "date": "2023-04-01", "price": 75 },
-    	{ "date": "2023-05-01", "price": 86 }
-  	    ]
+            {
+                "date": "2020-01-01",
+                "price": 140
+            },
+            {
+                "date": "2020-02-01",
+                "price": 100
+            },
+            {
+                "date": "2020-02-02",
+                "price": 140
+            },
+            {
+                "date": "2021-02-03",
+                "price": 85
+            },
+            {
+                "date": "2021-02-15",
+                "price": 130
+            },
+            {
+                "date": "2021-03-20",
+                "price": 90
+            },
+            {
+                "date": "2022-02-06",
+                "price": 110
+            },
+            {
+                "date": "2022-03-01",
+                "price": 100
+            },
+            {
+                "date": "2023-04-01",
+                "price": 75
+            },
+            {
+                "date": "2023-05-01",
+                "price": 86
+            }
+        ],
         "sinopsys": "The cutting-edge 2D/3D hybrid graphics pioneered in the Guilty Gear series have been raised to the next level in “GUILTY GEAR -STRIVE-“. The new artistic direction and improved character animations will go beyond anything you’ve seen before in a fighting game!",
         "score": {
             "average": 80,
@@ -154,7 +274,7 @@
         }
     },
     {
-    "id": 5,
+        "id": 5,
         "name": "The Messenger",
         "company": "Sabotage Studio",
         "mainImage": "https://static.wikia.nocookie.net/the-messenger-2018/images/6/6b/Key_Art_1.jpg/revision/latest?cb=20190203082849",
@@ -172,19 +292,49 @@
                 "price": "R$ 25,00"
             }
         ],
-	"prices": [
-    	{ "date": "2020-01-01", "price": 38 },
-    	{ "date": "2020-02-01", "price": 35 },
-    	{ "date": "2020-02-02", "price": 20 },
-    	{ "date": "2021-02-03", "price": 35 },
-    	{ "date": "2021-02-15", "price": 25 },
-    	{ "date": "2021-03-20", "price": 30 },
-    	{ "date": "2022-02-06", "price": 17 },
-    	{ "date": "2022-03-01", "price": 28 },
-   	{ "date": "2023-04-01", "price": 15 },
-    	{ "date": "2023-05-01", "price": 25 }
-  	]
-        "sinopsys": "A young ninja, eager to leave his village and explore the world, experiences the fated day of the demon army attack. The legendary Western Hero appears, driving away the demon army, and tasks the ninja with the role of "The Messenger," who must deliver a scroll to the top of a mountain. ",
+        "prices": [
+            {
+                "date": "2020-01-01",
+                "price": 38
+            },
+            {
+                "date": "2020-02-01",
+                "price": 35
+            },
+            {
+                "date": "2020-02-02",
+                "price": 20
+            },
+            {
+                "date": "2021-02-03",
+                "price": 35
+            },
+            {
+                "date": "2021-02-15",
+                "price": 25
+            },
+            {
+                "date": "2021-03-20",
+                "price": 30
+            },
+            {
+                "date": "2022-02-06",
+                "price": 17
+            },
+            {
+                "date": "2022-03-01",
+                "price": 28
+            },
+            {
+                "date": "2023-04-01",
+                "price": 15
+            },
+            {
+                "date": "2023-05-01",
+                "price": 25
+            }
+        ],
+        "sinopsys": "A young ninja, eager to leave his village and explore the world, experiences the fated day of the demon army attack. The legendary Western Hero appears, driving away the demon army, and tasks the ninja with the role of The Messenger, who must deliver a scroll to the top of a mountain.",
         "score": {
             "average": 100,
             "total": 2,

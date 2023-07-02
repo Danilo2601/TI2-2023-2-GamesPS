@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="chart-container">
+    <canvas id="price-chart"></canvas>
+  </div>
+
+  <div>
+    <label for="granularity-select">Granularidade:</label>
+    <select id="granularity-select" onchange="updateChart()">
+      <option value="day">Dia</option>
+      <option value="month">Mês</option>
+      <option value="year">Ano</option>
+    </select>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

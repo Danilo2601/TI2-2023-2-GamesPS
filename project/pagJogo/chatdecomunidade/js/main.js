@@ -114,4 +114,18 @@ var responder = () => {
 
 url = window.location.href;
 id = url.substring(url.lastIndexOf('#') + 1);
-document.querySelector("div.iframe").innerHTML = `<iframe src="../Apresentaçao de jogos com ranking/index.html#${id}" frameborder="0"></iframe>`;
+document.querySelector("div.i1").innerHTML = `<iframe src="../Apresentaçao de jogos com ranking/index.html#${id}" frameborder="0"></iframe>`;
+document.querySelector("div.i2").style.display = "none";
+var show = false;
+document.querySelector("#graph").addEventListener("click", () => {
+  if (!show) {
+    document.querySelector("div.i2").style.display = "block";
+    document.querySelector("div.i2").innerHTML = `<iframe src="../Grafico/index.html#${id - 1}" frameborder="0"></iframe>`;
+    show = true;
+  }
+  else {
+    document.querySelector("div.i2").style.display = "none";
+    document.querySelector("div.i2").innerHTML = "";
+    show = false;
+  }
+});

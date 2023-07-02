@@ -1,11 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
+#graph{
+
+	width: 150px;
+	padding: 4px;
+	background-color: #09081C;
+	border: none;
+	border-radius: 5px;
+	color: #144190;
+	font-weight: bold;
+	margin: 10px;
+}
+
 .iframe {
 	width: 200%;
 	height: 400px;
 	padding: 0;
 	overflow: hidden;
+}
+
+.iframe.i2 {
+	width: 100%;
+	height: 400px;
 }
 
 iframe {
@@ -23,6 +40,7 @@ iframe {
 	-webkit-transform: scale(1);
 	-webkit-transform-origin: 0 0;
 }
+
 @media screen and (max-width:1000px) {
 	iframe {
 		zoom: 0.85;
@@ -33,6 +51,7 @@ iframe {
 		-webkit-transform: scale(0.85);
 		-webkit-transform-origin: 0 0;
 	}
+
 	.iframe {
 		width: 200%;
 		height: 340px;
@@ -40,6 +59,7 @@ iframe {
 		overflow: hidden;
 	}
 }
+
 @media screen and (max-width:800px) {
 	iframe {
 		zoom: 0.5;
@@ -50,6 +70,7 @@ iframe {
 		-webkit-transform: scale(0.5);
 		-webkit-transform-origin: 0 0;
 	}
+
 	.iframe {
 		width: 200%;
 		height: 200px;
