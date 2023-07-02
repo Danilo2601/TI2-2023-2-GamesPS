@@ -1,0 +1,40 @@
+
+{
+    "imagens": [
+      {
+        "url": "https://pbs.twimg.com/media/FzaiwfFWIAAKkGA.jpg:large",
+        "alt": "Imagem 1",
+        "titulo": "Valorant",
+        "categoria": "fps",
+        "class": "slide"
+      },
+      {
+        "url": "https://game-experience.it/wp-content/uploads/2023/03/the-legend-of-zelda-tears-of-the-kingdom-ecco-quando-verra-mostrato-il-gameplay.jpg",
+        "alt": "Imagem 2",
+        "titulo": "Zelda",
+        "categoria": "RPG",
+        "class": "slide"
+      },
+      {
+        "url": "https://cdn2.tfx.company/images/clickwallpapers-minecraft-legends-wallpapers-1920x1080-img1.jpg",
+        "alt": "Imagem 3",
+        "titulo": "Minecraft",
+        "categoria": "RPG",
+        "class": "slide"
+      },
+      {
+        "url": "https://images4.alphacoders.com/115/thumb-1920-1151249.jpg",
+        "alt": "Imagem 4",
+        "titulo": "Elden Ring",
+        "categoria": "RPG",
+        "class": "slide"
+      },
+      {
+        "url": "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LOL_2560x1440-98749e0d718e82d27a084941939bc9d3",
+        "alt": "Imagem 5",
+        "titulo": "League Of Legends",
+        "categoria": "MOBA",
+        "class": "slide"
+      }
+    ]
+  }
