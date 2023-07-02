@@ -238,13 +238,19 @@ GitHub Pages
 
 Controle de Versão
 
+Nosso grupo não utilizou nenhum controle de versão.
 
 ############## SPRINT 1 ACABA AQUI #############
+
 Projeto da Solução
-...... COLOQUE AQUI O SEU TEXTO ......
+Um site de filtragem de jogos e comunidades.
 
 Tecnologias Utilizadas
-...... COLOQUE AQUI O SEU TEXTO ......
+Utilizamos as linguagens: HTML, CSS e JavaScript.
+Utilizamos o Miro e Canva.
+Utlizamos LocalStorage e JSON.
+
+  O usuário armazena os dados JSON no LocalStorage e os dados são retornados, tanto para fazer o cadastro e login, quanto para criar um post.
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
@@ -260,40 +266,18 @@ Exemplo do diagrama de Arquitetura:
 Exemplo de Arquitetura
 
 Avaliação da Aplicação
-...... COLOQUE AQUI O SEU TEXTO ......
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+  O cenário de teste utlizado foi a própria avaliação por pares. Foi bem útil para visualizarmos o projeto em geral.
 
 Plano de Testes
-...... COLOQUE AQUI O SEU TEXTO ......
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+  Todos os testes realizados foram positivos, os feedbacks foram 90% muito bons, apenas algumas observações a serem analisadas.
 
-Links Úteis:
-
-IBM - Criação e Geração de Planos de Teste
-Práticas e Técnicas de Testes Ágeis
-Teste de Software: Conceitos e tipos de testes
-Ferramentas de Testes (Opcional)
-...... COLOQUE AQUI O SEU TEXTO ......
-
-Comente sobre as ferramentas de testes utilizadas.
-
-Links Úteis:
-
-Ferramentas de Test para Java Script
-UX Tools
 Registros de Testes
-...... COLOQUE AQUI O SEU TEXTO ......
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+ Houveram muitos erros com CSS e JavaScript, assim acessamos diversos sites para resolver os problemas, e resolvemos.
 
 Referências
-...... COLOQUE AQUI O SEU TEXTO ......
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
-Links Úteis:
-
-Formato ABNT
-Referências Bibliográficas da ABNT
+[StackOverflow](https://stackoverflow.com)
+https://www.w3schools.com
