@@ -1,15 +1,53 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {margin:0; padding:0; font-family: 'Ubuntu', sans-serif;}
-body {background:#fff !important; font-size:12px; color:#FFF;}
-div {position:relative}
-img {border:none}
-a {outline:none; overflow:hidden; text-decoration:none}
-a:hover {text-decoration:none}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: #fff !important;
+	font-size: 12px;
+	color: #FFF;
+}
+
+div {
+	position: relative
+}
+
+img {
+	border: none
+}
+
+a {
+	outline: none;
+	overflow: hidden;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: none
+}
+
+
+iframe {
+	width: 100%;
+	height: 400px;
+	overflow: none;
+}
 
 /*classes*/
-.clear {width:100%; height:0; display:block; clear:both; background-color:transparent; font-size:0}
+.clear {
+	width: 100%;
+	height: 0;
+	display: block;
+	clear: both;
+	background-color: transparent;
+	font-size: 0
+}
+
 .left {
 	float: left
 }
@@ -17,36 +55,37 @@ a:hover {text-decoration:none}
 .bt-primary:hover {
 	background-color: #2f7e80
 }
+
 /* Id's */
 
-#logo{
+#logo {
 	margin-left: 10px;
 }
 
-#profile-picture{
+#profile-picture {
 	margin-left: 10px;
 	margin-top: 25px;
 }
 
-#pesquisa{
+#pesquisa {
 	margin-top: 10px;
 	background-color: #144190;
 	border-radius: 15px;
 }
 
-#barra-lateral{
+#barra-lateral {
 	float: right;
 	padding: 10px;
 	background-color: #E6E6E6;
 }
 
-#categories{
+#categories {
 	width: 99.9%;
 	background-color: #09081C;
 	border-radius: 10px;
 }
 
-#categories .btn{
+#categories .btn {
 	background-color: #144190;
 	color: #E6E6E6;
 }
@@ -61,7 +100,7 @@ a:hover {text-decoration:none}
 	color: #E6E6E6;
 }
 
-#post-button{
+#post-button {
 	margin-right: 20px;
 	margin-top: 10px;
 	border-radius: 20px;
@@ -85,11 +124,12 @@ a:hover {text-decoration:none}
 	display: inline-block;
 	color: #666
 }
+
 #interacao-comunidade a {
 	color: #666
 }
 
-.d-flex{
+.d-flex {
 	width: 10%;
 }
 
@@ -110,7 +150,7 @@ a:hover {text-decoration:none}
 	padding: 10px;
 }
 
-#icon-image{
+#icon-image {
 	margin-bottom: 5px;
 	position: relative;
 	float: left;
@@ -120,7 +160,7 @@ a:hover {text-decoration:none}
 	border-radius: 10px;
 }
 
-#resposta-button{
+#resposta-button {
 	background-color: #144190;
 	color: #E6E6E6;
 }
@@ -131,7 +171,7 @@ a:hover {text-decoration:none}
 	background-color: #09081C;
 }
 
-#barra-lateral{
+#barra-lateral {
 	margin: 0px;
 	padding: 10px;
 	border-radius: 15px;
@@ -143,9 +183,11 @@ a:hover {text-decoration:none}
 	font-size: 18px;
 	font-weight: 700
 }
+
 .descricao-post {
 	margin-left: 10px
 }
+
 .descricao-post h2 {
 	margin: 0;
 	padding: 0;
@@ -153,9 +195,11 @@ a:hover {text-decoration:none}
 	line-height: 20px !important;
 	color: #666
 }
+
 .descricao-post h2 a {
 	color: #11a8ab
 }
+
 .post-forum:after {
 	visibility: hidden;
 	display: block;
@@ -164,11 +208,12 @@ a:hover {text-decoration:none}
 	clear: both;
 	height: 0;
 }
+
 #img-destaque-comunidade {
 	margin-bottom: 10px;
 }
 
-#responder-btn{
+#responder-btn {
 	border-radius: 15px;
 	background-color: #144190;
 }
@@ -178,33 +223,40 @@ a:hover {text-decoration:none}
 	list-style: none;
 	margin-top: 5px
 }
+
 .interacao-forum li {
 	display: inline-block;
 	padding: 0 7px;
 	border-right: 1px solid #E6E6E6
 }
+
 .interacao-forum li:last-child {
 	border-right: 0;
 	padding-right: 0;
 	color: #394264;
 }
+
 .interacao-forum li:first-child {
 	padding-left: 0;
 
 }
+
 .post-forum {
 	display: none;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #f1f1f1
 }
+
 .post-forum:last-child {
 	border-bottom: 0
 }
+
 .descricao-forum {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
 .resposta-forum-user {
 	margin: 10px;
 	color: #E6E6E6;
@@ -214,7 +266,7 @@ a:hover {text-decoration:none}
 	width: 92%;
 	margin-left: 15px;
 }
+
 #topo-post-forum {
 	margin-top: 20px;
 }
-
