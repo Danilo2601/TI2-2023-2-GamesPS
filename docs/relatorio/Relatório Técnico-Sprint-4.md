@@ -264,12 +264,7 @@ Arquitetura da solução
 
 ![Minimalist Process Flow Chart Cycle Diagram](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/73e931b0-4bce-4443-a384-e7d71e597599)
 
-
-Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
-
-Exemplo do diagrama de Arquitetura:
-
-Exemplo de Arquitetura
+Ao abrir o site, todos arquivos HTML, JSON, CSS e JavaScript serão carregados e o site será aberto com todas as funcionalidades.
 
 Avaliação da Aplicação
 
