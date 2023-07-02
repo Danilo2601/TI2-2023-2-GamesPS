@@ -256,6 +256,9 @@ Utlizamos LocalStorage e JSON.
 
   O usuário armazena os dados JSON no LocalStorage e os dados são retornados, tanto para fazer o cadastro e login, quanto para criar um post.
 
+  ![User_Flow](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/503e125c-ee3a-45aa-b8f0-38058293558b)
+
+
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas. Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 Inclua os diagramas de User Flow, esboços criados pelo grupo (stoyboards), além dos protótipos de telas (wireframes). Descreva cada item textualmente comentando e complementando o que está apresentado nas imagens.
