@@ -27,22 +27,23 @@ function salvarMensagem(mensagem) {
 
 function exibirMensagensSalvas() {
   mensagemChat.innerHTML = "";
-
+  
   const mensagensSalvas = localStorage.getItem("mensagens");
   let mensagens = [];
-
+  
   if (mensagensSalvas) {
     mensagens = JSON.parse(mensagensSalvas);
   }
-
+  
   mensagens.forEach(function(mensagem) {
-    const novaDiv = document.createElement("div"); // Criar uma div para cada mensagem
-    const novaMensagem = document.createElement("p");
-    novaMensagem.textContent = mensagem;
-    novaDiv.appendChild(novaMensagem); // Adicionar a mensagem à div
-    mensagemChat.appendChild(novaDiv); // Adicionar a div ao elemento de mensagens
+    let str = ""
+
+    str += `<p class="p-mensagem">${mensagem}</p>`
+    document.getElementById("mensagem").innerHTML += str;
   });
 }
 
 // Carregar mensagens salvas ao carregar a página
-exibirMensagensSalvas();
+window.addEventListener("DOMContentLoaded", function() {
+  exibirMensagensSalvas();
+});
