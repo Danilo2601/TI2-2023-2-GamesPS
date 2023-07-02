@@ -18,6 +18,18 @@
                 "price": "R$ 357,99"
             }
         ],
+        "prices": [
+    { "date": "2020-01-01", "price": 357 },
+    { "date": "2020-02-01", "price": 357 },
+    { "date": "2020-02-02", "price": 357 },
+    { "date": "2021-02-03", "price": 357 },
+    { "date": "2021-02-15", "price": 357 },
+    { "date": "2021-03-20", "price": 357 },
+    { "date": "2022-02-06", "price": 357 },
+    { "date": "2022-03-01", "price": 357 },
+    { "date": "2023-04-01", "price": 357 },
+    { "date": "2023-05-01", "price": 357 }
+  ]
         "sinopsys": "The Legend of Zelda: Tears of the Kingdom is a 2023 action-adventure game developed and published by Nintendo for the Nintendo Switch. The sequel to The Legend of Zelda: Breath of the Wild (2017), Tears of the Kingdom retains aspects including the open world environment of Hyrule, which has been expanded to allow for more vertical exploration. Link, the protagonist, joins Princess Zelda to defeat Ganondorf, who seeks to destroy Hyrule. <br>&nbsp&nbspTears of the Kingdom was conceived after ideas for Breath of the Wild downloadable content (DLC) had exceeded its scope. Its development was led by Nintendo's Entertainment Planning & Development (EPD) division, with Breath of the Wild director Hidemaro Fujibayashi and producer Eiji Aonuma reprising their roles. A teaser was shown at E3 2019 with a full reveal at E3 2021. Tears of the Kingdom was initially planned for release in 2022 before being delayed to May 2023. It received acclaim, with praise for its numerous improvements upon its predecessor, expanded open world and features encouraging exploration and experimentation. ",
         "score": {
             "average": 50,
