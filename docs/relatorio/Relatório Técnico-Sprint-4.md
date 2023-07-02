@@ -243,11 +243,15 @@ Nosso grupo não utilizou nenhum controle de versão.
 ############## SPRINT 1 ACABA AQUI #############
 
 Projeto da Solução
+
 Um site de filtragem de jogos e comunidades.
 
 Tecnologias Utilizadas
+
 Utilizamos as linguagens: HTML, CSS e JavaScript.
+
 Utilizamos o Miro e Canva.
+
 Utlizamos LocalStorage e JSON.
 
   O usuário armazena os dados JSON no LocalStorage e os dados são retornados, tanto para fazer o cadastro e login, quanto para criar um post.
