@@ -1,0 +1,136 @@
+{
+    "jogos": [
+    {
+    "titulo": "The Witcher 3: Wild Hunt",
+    "desenvolvedora": "CD Projekt Red",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC"],
+    "classificacao": "Mature",
+    "avaliacao": 9.8,
+    "url": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/?l=portuguese",
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/qezXTVn1ExqBjVjR5Ipm97IK.png"
+    },
+    {
+    "titulo": "Minecraft",
+    "desenvolvedora": "Mojang Studios",
+    "genero": ["Sandbox", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Everyone",
+    "avaliacao": 9.5,
+    "url": "https://www.minecraft.net/pt-pt",
+    "img": "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png"
+    },
+    {
+    "titulo": "Mortal Kombat 1",
+    "desenvolvedora": "NetherRealm Studios",
+    "genero": ["Luta", "Ação"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Mature",
+    "avaliacao": 8.9,
+    "url": "https://www.mortalkombat.com/pt-br",
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1515/93797636f47b37b74e9d3740e17ae1306aaf539c7952a703.jpg"
+    },
+    {
+    "titulo": "The Elder Scrolls V: Skyrim",
+    "desenvolvedora": "Bethesda Softworks",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Mature",
+    "avaliacao": 9.9,
+    "url": "https://www.nadex-games.com.br/the-witcher-3-complete-steam",
+    "img": "https://sm.ign.com/ign_br/game/t/the-elder-/the-elder-scrolls-v-skyrim_81xc.jpg"
+    },
+    {
+    "titulo": "Valorant",
+    "desenvolvedora": "Riot Games",
+    "genero": ["FPS", "Ação"],
+    "plataformas": ["PC"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://playvalorant.com/pt-br/",
+    "img": "https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/valtall_1200x1600-300d8e4cb9bee9dbb1166b574b3bdc93"
+    },
+    {
+    "titulo": "League of Legends",
+    "desenvolvedora": "Riot Games",
+    "genero": ["MOBA", "Ação"],
+    "plataformas": ["PC"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://www.leagueoflegends.com/pt-br/",
+    "img": "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/LoL_1200x1600-15ad6c981af8d98f50e833eac7843986"
+    },
+    {
+    "titulo": "Cyberpunk 2077",
+    "desenvolvedora": "CD Projekt Red",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC"],
+    "classificacao": "Mature",
+    "avaliacao": 9.8,
+    "url": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+    "img": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png"
+    },
+    {
+    "titulo": "Minecraft Legends",
+    "desenvolvedora": "Mojang Studios",
+    "genero": ["RPG", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Everyone",
+    "avaliacao": 9.5,
+    "url": "https://www.minecraft.net/pt-pt/about-legends",
+    "img": "https://wallpapercave.com/wp/wp11417138.png"
+    },
+    {
+    "titulo": "Overwatch 2",
+    "desenvolvedora": "Blizzard Entertainment",
+    "genero": ["FPS", "Ação"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://overwatch.blizzard.com/pt-br/",
+    "img": "https://cdn.mobygames.com/covers/11037272-overwatch-2-playstation-4-front-cover.jpg"
+    },
+    {
+    "titulo": "The Elder Scrolls VI",
+    "desenvolvedora": "Bethesda Softworks",
+    "genero": ["RPG", "Ação", "Aventura"],
+    "plataformas": ["PlayStation 4", "Xbox One", "PC","Nintendo Switch"],
+    "classificacao": "Mature",
+    "avaliacao": 9.9,
+    "url": "https://www.youtube.com/watch?v=OkFdqqyI8y4",
+    "img": "https://assets-prd.ignimgs.com/2021/12/07/elderscrollsvi-ign-1638841050781.jpg"
+    },
+    {
+    "titulo": "Legends of Runeterra",
+    "desenvolvedora": "Riot Games",
+    "genero": ["Card Game", "Ação"],
+    "plataformas": ["PC"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://playruneterra.com/pt-br/",
+    "img": "https://images.contentstack.io/v3/assets/blta38dcaae86f2ef5c/blt2c2cb8fdc103ff78/63448d10eded0211051c6192/LoR_6D2022_Domination_Website_IntroStatic_EN_PCruz.jpg?crop=840:1080"
+    },
+    {
+    "titulo": "Counter Strike: Global Offensive",
+    "desenvolvedora": "Valve Corporation",
+    "genero": ["FPS", "Ação"],
+    "plataformas": ["PC"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+    "img": "https://upload.wikimedia.org/wikipedia/en/6/6e/CSGOcoverMarch2020.jpg"
+     },
+     {
+    "titulo": "Counter Strike 2",
+    "desenvolvedora": "Valve Corporation",
+    "genero": ["FPS", "Ação"],
+    "plataformas": ["PC"],
+    "classificacao": "Teen",
+    "avaliacao": 8.9,
+    "url": "https://www.counter-strike.net/cs2",
+    "img": "https://pbs.twimg.com/media/Fr15MBtWIAIm_Jw?format=jpg&name=4096x4096"
+     }
+    ]
+   } 
+
+   

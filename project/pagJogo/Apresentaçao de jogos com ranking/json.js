@@ -52,12 +52,15 @@ var sImage = (x) => {
 var sino = (x) => {
     document.querySelector('#sinopsys').innerHTML = '&nbsp&nbsp' + x.sinopsys;
 }
+var games;
 onload = () => {
+
+
     fetch('../../Databank/data.json')
         .then(response => response.json())
-        .then(games => {
+        .then(data => {
 
-
+            games = data;
             let url = window.location.href;
             let id = url.substring(url.lastIndexOf('#') + 1);
             let C;
@@ -67,6 +70,26 @@ onload = () => {
                     break;
                 }
             }
+
+            ready();
+
+            let star = document.querySelector("#SAVE");
+
+            star.addEventListener("click", function (event) {
+                star.style.color = "yellow";
+
+                const userLogado = JSON.parse(localStorage.getItem('userLogado')) || { wishlist: [] };
+
+                if (userLogado['wishlist'] == '' || userLogado['wishlist'] == undefined || userLogado['wishlist'] == null) {
+                    userLogado['wishlist'] = id;
+                    localStorage.setItem('userLogado', JSON.stringify(userLogado));
+                } else {
+                    userLogado['wishlist'] += ',' + id;
+                    localStorage.setItem('userLogado', JSON.stringify(userLogado));
+                }
+
+                if (userLogado['wishlist'].includes(id)) return alert('Jogo já adicionado à wishlist!');
+            });
 
             let GO = () => {
                 let [url1, url2] = url.split('#');

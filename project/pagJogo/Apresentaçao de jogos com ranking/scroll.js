@@ -1,6 +1,6 @@
 
 
-$(document).ready(function () {
+var ready = () => {
     // scroll inicial
     $(".carousel-indicators").scrollLeft(1);
 
@@ -108,4 +108,4 @@ $(document).ready(function () {
             }
         }
     })
-})
+}

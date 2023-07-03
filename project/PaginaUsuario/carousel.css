@@ -1,0 +1,115 @@
+/* Parent Div */
+.carosel {
+    /* CAN CUSTOMIZE WIDTH*/
+    width: max-content;
+    
+    min-height: 100px;
+    height: fit-content;
+    background-color: #010315;
+    /*border: #0CA789 dashed 2px;*/
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 0px;
+    display: flex;
+}
+
+
+/* <------Card/Li Parent------> */
+.carousel-options {
+    height: 300px;
+    display: flex;
+    background-color: #010315;
+    /*border: #0CA789 dashed 2px;*/
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    float: right;
+}
+
+#caroussel {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    background-color: #010315;
+    /*border: #0CA789 dashed 2px;*/
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    justify-content: center;
+}
+
+#caroussel>li {
+    /*border: #fff dashed 2px;*/
+    /*debbug*/
+    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* <------Buttons------> */
+.carosel>#Btn {
+    width: 0px;
+    z-index: 5;
+    visibility: visible;
+    background: none;
+    border: none;
+    color: #0CA789;
+    cursor: pointer;
+    /*border: #0CA789 dashed 2px;*/
+    position: relative;
+    padding: 0px;
+    overflow: visible;
+}
+
+.carosel #Btn>span>span:hover {
+    transform: scale(1.2);
+    z-index: 5;
+}
+.leftBtn{
+    float: left;
+}
+
+#left {
+    position: relative;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    float: inline-start;
+    z-index: 5;
+    float: left;
+}
+
+#left>span {
+    position: relative;
+    left: 5px;
+    z-index: 5;
+}
+
+#right {
+    position: relative;
+    right: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
+
+#right>span {
+    position: relative;
+    right: 5px;
+    z-index: 5;
+}
