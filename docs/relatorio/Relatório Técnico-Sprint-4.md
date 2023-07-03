@@ -61,8 +61,6 @@ Ferramentas
 
 Controle de Versão
 
-############## SPRINT 1 ACABA AQUI #############
-
 Projeto da Solução
 
 Tecnologias Utilizadas
