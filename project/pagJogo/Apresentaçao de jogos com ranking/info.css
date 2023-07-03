@@ -1,3 +1,9 @@
+#SAVE{
+    background:none;
+    border: none;
+    color: white;
+    float: right;
+}
 body{
     overflow: hidden;
 }
