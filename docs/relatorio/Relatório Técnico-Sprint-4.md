@@ -240,7 +240,7 @@ Controle de Versão
 
 Nosso grupo não utilizou nenhum controle de versão.
 
-############## SPRINT 1 ACABA AQUI #############
+
 
 Projeto da Solução
 
@@ -260,11 +260,17 @@ Utlizamos LocalStorage e JSON.
 
 
 1 - Página inicial: Listadas imagens de jogos que direcionam para as páginas dos mesmos, botões que direcionam para a página de pesquisa e página de usuário.
+
 2 - Página de pesquisa: Caixa de pesquisa onde o usuário irá digitar o nome do jogo que procura e sistema de filtragem por categorias.
+
 3 - Página de jogo: após clicar no jogo procurado, será direcionado para a página de jogo, com imagem de capa, descrição prévia do jogo e comentários da comunidade sobre o mesmo.
+
 4 - Página da comunidade: uma expansão da parte de comunidade da página de jogo anterior onde os usuários interagem com assuntos sobre os seus jogos preferidos.
+
 5 - Página de login: caso o usuário queira entrar na sua conta, ou criá-la, será direcionado para a página de login.
+
 6 - Página principal: após entrar na sua conta, o usuário é redirecionado para a página principal do site.
+
 7 - Página de usuário: o usuário pode clicar no botão de conta na página principal para ser direcionado a página do seu próprio perfil, onde terá listado seus jogos que estão na lista de desejos, amigos, etc.
 
 
