@@ -105,15 +105,15 @@ Personas, Empatia e Proposta de Valor
 
   As personas que foram entrevistadas e auxiliaram no direcionamento do projeto estão listadas abaixo:
 
-![Persona 1](images/Persona1.jpg) 
+![Persona1](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/1a2f8e4e-7ffa-458b-bae4-b9708da73ff9)
 
-![Persona 2](images/Persona2.jpg)
+![Persona2](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/869e83c3-1e7f-474b-a9f0-7bc692758888)
 
-![Persona 3](images/Persona3.jpg)
+![Persona3](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/c1c33133-4245-4897-a74f-eaa9793de398)
 
-![Persona 4](images/Persona4.jpg)
+![Persona4](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/1a5cc28f-ac01-4cbd-af2a-484ac270ebc8)
 
-![Persona 5](images/Persona5.jpg)
+![Persona5](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/54c016ed-e30b-4065-9c46-559870f5a5f1)
 
 Histórias de Usuários
 Eu como amante de jogos...
@@ -182,12 +182,11 @@ O nosso projeto de Interface consiste em uma tela principal, com informações i
 
 User Flow
 
-![User Flow](images/Userflow.jpg)
+![Userflow](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/290a6c7b-f663-4bd3-a047-4b454bf91f33)
 
 Wireframes
 
-
-![Wireframe do Projeto](images/Wireframe.jpg)
+![Wireframe](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20231-grupo-de-nao-saber-o-que-jogar/assets/130259647/5dc13194-db64-40ae-a5ad-79de25a6cd5c)
 
 Metodologia
 
