@@ -5,17 +5,17 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * Danilo Paris Bastos
-* Arthur Clemente Machado
-* Diego Moreira Rocha
-* Gabriel Cunha Schlegel
-* Iago Fereguetti Ribeiro
+* Igor Silva de Paiva Paschoalino
+* Gabriel Reis Villela
 * Pedro Augusto de Paula Ferreira dos Santos Souza
 
 ## Professores responsáveis
 
-* Rommel Vieira Carneiro
-* Ilo Amy Saldanha Rivero
-* Fernando Camilo Paes
+* Daniel de Oliveira Capanema
+* Max do Val Machado
+* Sandro Jerônimo de Almeida
+* Wladmir Cardoso Brandao
+
 
 ## Instruções de utilização
 
