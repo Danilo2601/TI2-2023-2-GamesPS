@@ -25,9 +25,9 @@ public class UserDAO extends DAO {
 	public boolean insert(User user) {
 		boolean status = false;
 		try {
-			String sql = "INSERT INTO users (usuario, senha, nome, email, idade) "
+			String sql = "INSERT INTO users (usuario, senha, nome, email, idade, gerenciador) "
 		               + "VALUES ('" + user.getUsuario() + "', '"
-		               + user.getSenha() + "', '" + user.getNome() + "','"+ user.getEmail()+"', " +user.getIdade()+");";
+		               + user.getSenha() + "', '" + user.getNome() + "','"+ user.getEmail()+"', " +user.getIdade()+ ", "+user.getGerenciador()+");";
 			PreparedStatement st = conexao.prepareStatement(sql);
 			st.executeUpdate();
 			st.close();
@@ -47,7 +47,7 @@ public class UserDAO extends DAO {
 			String sql = "SELECT * FROM users WHERE id="+id;
 			ResultSet rs = st.executeQuery(sql);	
 	        if(rs.next()){            
-	        	 users = new User(rs.getInt("id"), rs.getString("usuario"), rs.getString("senha"), rs.getString("nome"), rs.getString("email"), rs.getInt("idade"));
+	        	 users = new User(rs.getInt("id"), rs.getString("usuario"), rs.getString("senha"), rs.getString("nome"), rs.getString("email"), rs.getInt("idade"), rs.getBoolean("gerenciador"));
 	        st.close();
 		}
 	        } catch (Exception e) {
@@ -85,7 +85,7 @@ public class UserDAO extends DAO {
 			String sql = "SELECT * FROM users" + ((orderBy.trim().length() == 0) ? "" : (" ORDER BY " + orderBy));
 			ResultSet rs = st.executeQuery(sql);	           
 	        while(rs.next()) {	            	
-	        	User p = new User(rs.getInt("id"), rs.getString("usuario"), rs.getString("senha"), rs.getString("nome"), rs.getString("email"), rs.getInt("idade")); 
+	        	User p = new User(rs.getInt("id"), rs.getString("usuario"), rs.getString("senha"), rs.getString("nome"), rs.getString("email"), rs.getInt("idade"), rs.getBoolean("gerenciador")); 
 	        	userss.add(p);
 	        }
 	        st.close();
@@ -103,7 +103,9 @@ public class UserDAO extends DAO {
 					   + "senha = " + user.getSenha() + ", " 
 					   + "nome = " + user.getNome() + ","
 					   + "email ="+user.getEmail()+", " 
-					   + "idade = "+user.getIdade()+" WHERE id = " + user.getId();
+					   + "idade = "+user.getIdade()+", "
+					   + "gerenciador = " +user.getGerenciador()+
+					   " WHERE id = " + user.getId();
 			PreparedStatement st = conexao.prepareStatement(sql);
 			st.executeUpdate();
 			st.close();

@@ -60,12 +60,16 @@ public class UserService {
 		if(tipo == FORM_INSERT || tipo == FORM_UPDATE) {
 			String action = "/user/";
 			String usuario, nome, senha, email, buttonLabel;
+			int idade;
+			boolean gerenciador;
 			if (tipo == FORM_INSERT){
 				action += "insert";
 				usuario = "Inserir User";
 				senha = "Inserir sua senha";
 				nome = "";
 				email = "Inserir e-mail";
+				idade = 18;
+				gerenciador = false;
 				buttonLabel = "Inserir";
 			} else {
 				action += "update/" + user.getId();
@@ -73,6 +77,8 @@ public class UserService {
 				senha = user.getSenha();
 				nome = user.getNome();
 				email = user.getEmail();
+				idade = user.getIdade();
+				gerenciador = user.getGerenciador();
 				buttonLabel = "Atualizar";
 			}
 			umUser += "\t<form class=\"form--register\" action=\"" + action + "\" method=\"post\" id=\"form-add\">";
@@ -90,7 +96,8 @@ public class UserService {
 			umUser += "\t\t</tr>";
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Nome: <input class=\"input--register\" type=\"text\" name=\"nome\" placeholder=\""+ nome + "\"></td>";
-			umUser += "\t\t\t<td>Idade: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ user.getIdade() + "\"></td>";
+			umUser += "\t\t\t<td>Idade: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ idade + "\"></td>";
+			umUser += "\t\t\t<td>Gerenciador: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ gerenciador + "\"></td>";
 			umUser += "\t\t\t<td align=\"center\"><input type=\"submit\" value=\""+ buttonLabel +"\" class=\"input--main__style input--button\"></td>";
 			umUser += "\t\t</tr>";
 			umUser += "\t</table>";
@@ -111,6 +118,7 @@ public class UserService {
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Nome: "+ user.getNome() + "</td>";
 			umUser += "\t\t\t<td>Idade: "+ user.getIdade() + "</td>";
+			umUser += "\t\t\t<td>Gerenciador: "+ user.getGerenciador() + "</td>";
 			umUser += "\t\t\t<td>&nbsp;</td>";
 			umUser += "\t\t</tr>";
 			umUser += "\t</table>";		
@@ -139,22 +147,21 @@ public class UserService {
 		}
 
 		int i = 0;
-		String bgcolor = "";
+		String bgcolor = "#09081C";
 		for (User p : users) {
-			bgcolor = (i++ % 2 == 0) ? "#fff5dd" : "#dddddd";
+			bgcolor = (i++ % 2 == 0) ? "#09081C" : "#dddddd";
 			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
             		  "\t<td>" + p.getId() + "</td>\n" +
             		  "\t<td>" + p.getUsuario() + "</td>\n" +
             		  "\t<td>" + p.getIdade() + "</td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/" + p.getId() + "\"><img src=\"/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/update/" + p.getId() + "\"><img src=\"/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteUser('" + p.getId() + "', '" + p.getUsuario() + "', '" + p.getIdade() + "');\"><img src=\"/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/" + p.getId() + "\"><img src=\"/resources/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/update/" + p.getId() + "\"><img src=\"/resources/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteUser('" + p.getId() + "', '" + p.getUsuario() + "', '" + p.getNome() + "');\"><img src=\"/resources/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
             		  "</tr>\n";
 		}
 		list += "</table>";		
 		form = form.replaceFirst("<LISTAR-USER>", list);				
 	}
-	
 	
 	public Object insert(Request request, Response response) {
 		String nome = request.queryParams("nome");
@@ -162,10 +169,11 @@ public class UserService {
 		String senha = request.queryParams("senha");
 		String email = request.queryParams("email");
 		int idade = Integer.parseInt(request.queryParams("idade"));
+		boolean gerenciador = Boolean.parseBoolean(request.params("gerenciador"));
 		
 		String resp = "";
 		
-		User user = new User(-1, usuario, senha, nome, email, idade );
+		User user = new User(-1, usuario, senha, nome, email, idade, gerenciador );
 		
 		if(userDAO.insert(user) == true) {
             resp = "User (" + usuario + ") inserido!";
@@ -235,6 +243,7 @@ public class UserService {
         	user.setSenha(request.queryParams("senha"));
         	user.setEmail(request.queryParams("email"));
         	user.setIdade(Integer.parseInt(request.queryParams("idade")));
+			user.setGerenciador(Boolean.parseBoolean(request.queryParams("gerenciador")));
         	userDAO.update(user);
         	response.status(200); // success
             resp = "User (Id " + user.getId() + ") atualizado!";

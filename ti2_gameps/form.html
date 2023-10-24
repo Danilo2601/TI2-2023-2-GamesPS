@@ -1,5 +1,28 @@
 <html>
 <head>
+
+<header id="header">
+  <button onclick="toggleSidebar()" class="btn_icon_header">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+		  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+		</svg>
+
+  </button>
+  <div class="logo_header">
+	  <a href="index.html">
+	  <img src="../project/img/logo-ti2.png" alt="Logo">
+	</a>
+  </div>
+  <div class="navigation_header" id="navigation_header">
+	  <button onclick="toggleSidebar()" class="btn_icon_header" id="btn2">
+		  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+			  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+			</svg>
+	  </button>
+	  <a href="../project/Pesquisa/pesquisa.html">Search</a>
+	  <a href="../project/PaginaUsuario/usuario.html">Account</a>
+  </div>
+
 <meta content="text/html; charset = UTF-8" http-equiv="content-type">
 
 <title>Controle de Registro de Usuários</title>
@@ -22,7 +45,7 @@ function onLoad() {
 
 
 <body onload="onLoad()">
-	<h1>Controle de Registro de Usuários</h1>
+	<h1></h1>
 	<input type="hidden" id="msg" name="msg" value="">
     <UM-USER>
 	<br>
@@ -76,6 +99,100 @@ form p {
 .p--nomargin {
 	margin-left: 0px;
 	margin-right: 10px;
+}
+
+
+/* Style do Header para Desktop */
+
+header{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #09081C;
+  background-size: cover;
+  color: white;
+  height: 90px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 1px 4px whitesmoke; 
+  justify-content: space-between;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.logo_header a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body .content{
+  width: 100%;
+  margin: 0 10px;
+  margin-top: 20px ;
+  padding: 50px;
+  padding-bottom:0px ;
+  background: #09081C;
+  border-radius: 5px;
+}
+
+.btn_icon_header{
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.navigation_header{
+  display: flex;
+  gap: 3em;
+  z-index: 2;
+}
+
+.navigation_header a{
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 1s;
+  font-weight: bold;
+}
+/* Fim Style do Header para Desktop */
+
+/* Style do Header Responsivo */
+@media screen and (max-width: 768px) {
+  .btn_icon_header{
+      display: block;
+      color: white;
+  }
+
+  #btn2{
+    color: black;
+  }
+
+  .navigation_header{
+      position: absolute;
+      flex-direction: column;
+      top: 0;
+      background-color: whitesmoke;
+      height: 100%;
+      width: 35vw;
+      padding: 1em;
+      animation-duration: 1s;
+      margin-left: -100vw;
+  }
+
+  .navigation_header a{
+      text-decoration: none;
+      color: black;
+      transition: 1s;
+      font-weight: bold;
+  }
+
+
+  @keyframes showSidebar {
+      from {margin-left: -100vw;}
+      top {margin-left: -10vw;}
+  }
 }
 </style>
 </body>

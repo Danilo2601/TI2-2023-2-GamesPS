@@ -7,6 +7,7 @@ public class User {
 	private String nome;
 	private String email;
 	private int idade;
+	private boolean gerenciador;
 	
 	public User() {
 		this.id = -1;
@@ -15,15 +16,17 @@ public class User {
 		this.nome = "";
 		this.email = "";
 		this.idade = 18;
+		this.gerenciador = false;
 	}
 	
-	public User(int id, String usuario, String senha, String nome, String email,  int idade) {
+	public User(int id, String usuario, String senha, String nome, String email,  int idade, boolean gerenciador) {
 		this.id = id;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;
 		this.email = email;
 		this.idade = idade;
+		this.gerenciador = gerenciador;
 	}
 
 	public int getId() {
@@ -65,7 +68,12 @@ public class User {
 		this.email = email;
 	}
 
-	
+	public boolean getGerenciador(){
+		return gerenciador;
+	}
+	public void setGerenciador(boolean gerenciador){
+		this.gerenciador = gerenciador;
+	}
 	
 	
 	
