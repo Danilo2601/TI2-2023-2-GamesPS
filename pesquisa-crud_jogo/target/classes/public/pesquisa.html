@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Pesquisa Sprint 3</title>
+  <link rel="stylesheet" href="pesquisa.css">
+</head>
+
+<header>
+  <div class="header">
+    <a href="#default" id="logo"><img src="../img/logo-ti2.png" alt="Logo"></a>
+    <div class="header-right">
+      <a href="../index.html">Home</a>
+      <a class="ativo" href="../PaginaUsuario/usuario.html">Account</a>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+    <div class="search-area">
+      <div class="autocomplete" id="ator">
+		  <form class="form--search" action="/pesquisa" method="get" id="form-search">
+        <input type="text" id="search-bar" name="searcher" placeholder="Digite o nome do jogo">
+        <input type="submit" value="Search" onclick="colocaActionPeloAmordeDeus()" class="search-btn">
+          <img class="lupa-azul" src="./loupe-blue.svg" alt="">
+          <img class="lupa-branca" src="./loupe-white.svg" alt="">
+        </input>
+        <button class="clear-btn" onclick="clearGameCards()">Limpar</button>
+        </form>
+        <div class="autocomplete-items"></div>
+      </div>
+
+      <!-------------------------------------------------------------------->
+
+     <!-- <select class="dropdown-menu" id="flitargei">
+        <option value=""><a class="dropdown-item" href="#">Show all</a></option>
+        <option value="Everyone"><a class="dropdown-item" href="#">Everyone</a></option>
+        <option value="Mature"><a class="dropdown-item" href="#">Mature</a></option>
+        <option value="Teen"><a class="dropdown-item" href="#">Teen</a></option>
+      </select>-->
+    </div> 
+
+
+    <!-------------------------------------------------------------------->
+    <div class="result-area">
+      <div class="game-cards" id="game-cards">
+		  <input type="hidden" id="msg" name="msg" value="">
+	  </div>
+    </div>
+
+	<script>
+		
+		function clearGameCards() {
+  	const gameCardsContainer = document.getElementById("game-cards");
+  	gameCardsContainer.innerHTML = "";
+		}
+		
+		function colocaActionPeloAmordeDeus(){
+			const diva = document.getElementById("ator");
+			let nominho = document.querySelector("search-bar")
+			diva.innerHTML = ` <form class="form--search" action="/pesquisa/${nominho}" method="get" id="form-search">
+        <input type="text" id="search-bar" name="searcher" placeholder="Digite o nome do jogo">
+        <input type="submit" value="Search" class="search-btn">
+          <img class="lupa-azul" src="./loupe-blue.svg" alt="">
+          <img class="lupa-branca" src="./loupe-white.svg" alt="">
+        </input>
+        <button class="clear-btn" onclick="clearGameCards()">Limpar</button>
+        </form>
+        <div class="autocomplete-items"></div>`
+		}
+	</script>
+</body>
+<footer></footer>
+
+</html>

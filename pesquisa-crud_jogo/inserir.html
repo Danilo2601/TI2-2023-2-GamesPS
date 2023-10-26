@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de jogos</title>
+</head>
+
+<script type="text/javascript">
+
+function confirmarDeleteJogo(id, nome) {  
+	
+    if (confirm('Confirmar a exclusão do jogo [' + nome + '] (ID ' + id + ')')) {  
+        location.href = '/jogo/delete/' + id;
+    }
+}
+function onLoad() {
+    if(document.getElementById("msg").value != ""){
+      alert(document.getElementById("msg").value);
+    }
+}
+</script>
+
+<body id="pag">
+    <table width="80%" bgcolor="#f3f3f3" align="center">
+    <tr>
+    <td align="left"><font size="+2">Novo Produto</b></font></td>
+    <td><input type="hidden" id="msg" name="msg" value=""></td>
+    </tr>
+    </table>
+    <br>
+   
+    <p ADICIONE></p>
+    
+    <LISTAR-PRODUTO>
+</body>
+</html>
