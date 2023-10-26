@@ -2,7 +2,11 @@ package service;
 
 import java.util.Scanner;
 import java.io.File;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+
+import DAO.DAO;
 import DAO.UserDAO;
 import model.User;
 import spark.Request;
@@ -18,7 +22,7 @@ public class UserService {
 	private final int FORM_UPDATE = 3;
 	private final int FORM_ORDERBY_Id = 1;
 	private final int FORM_ORDERBY_NOME = 2;
-	private final int FORM_ORDERBY_IDADE= 3;
+	private final int FORM_ORDERBY_DATA_NASCIMENTO= 3;
 	
 	
 	public UserService() {
@@ -60,15 +64,15 @@ public class UserService {
 		if(tipo == FORM_INSERT || tipo == FORM_UPDATE) {
 			String action = "/user/";
 			String usuario, nome, senha, email, buttonLabel;
-			int idade;
+			LocalDate dataNascimento;
 			boolean gerenciador;
 			if (tipo == FORM_INSERT){
 				action += "insert";
 				usuario = "Inserir User";
 				senha = "Inserir sua senha";
-				nome = "";
+				nome = "Inserir seu nome";
 				email = "Inserir e-mail";
-				idade = 18;
+				dataNascimento = LocalDate.now();
 				gerenciador = false;
 				buttonLabel = "Inserir";
 			} else {
@@ -77,7 +81,7 @@ public class UserService {
 				senha = user.getSenha();
 				nome = user.getNome();
 				email = user.getEmail();
-				idade = user.getIdade();
+				dataNascimento = user.getDataNascimento();
 				gerenciador = user.getGerenciador();
 				buttonLabel = "Atualizar";
 			}
@@ -92,11 +96,11 @@ public class UserService {
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Usuário: <input class=\"input--register\" type=\"text\" name=\"usuario\" placeholder =\""+ usuario +"\"></td>";
 			umUser += "\t\t\t<td>Senha: <input class=\"input--register\" type=\"text\" name=\"senha\" placeholder=\""+ senha +"\"></td>";
-			umUser += "\t\t\t<td>E-mail: <input class=\"input--register\" type=\"text\" name=\"email\" placeholder=\""+ email +"\"></td>";
+			umUser += "\t\t\t<td>E-mail: <input class=\"input--register\" type=\"email\" name=\"email\" placeholder=\""+ email +"\"></td>";
 			umUser += "\t\t</tr>";
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Nome: <input class=\"input--register\" type=\"text\" name=\"nome\" placeholder=\""+ nome + "\"></td>";
-			umUser += "\t\t\t<td>Idade: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ idade + "\"></td>";
+			umUser += "\t\t\t<td>Idade: <input class=\"input--register\" type=\"date\" name=\"dataNascimento\" placeholder=\""+ dataNascimento + "\"></td>";
 			umUser += "\t\t\t<td>Gerenciador: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ gerenciador + "\"></td>";
 			umUser += "\t\t\t<td align=\"center\"><input type=\"submit\" value=\""+ buttonLabel +"\" class=\"input--main__style input--button\"></td>";
 			umUser += "\t\t</tr>";
@@ -117,7 +121,7 @@ public class UserService {
 			umUser += "\t\t</tr>";
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Nome: "+ user.getNome() + "</td>";
-			umUser += "\t\t\t<td>Idade: "+ user.getIdade() + "</td>";
+			umUser += "\t\t\t<td>Idade: "+ user.getDataNascimento().toString() + "</td>";
 			umUser += "\t\t\t<td>Gerenciador: "+ user.getGerenciador() + "</td>";
 			umUser += "\t\t\t<td>&nbsp;</td>";
 			umUser += "\t\t</tr>";
@@ -133,7 +137,7 @@ public class UserService {
     			"\n<tr>\n" + 
         		"\t<td><a href=\"/user/list/" + FORM_ORDERBY_Id + "\"><b>Id</b></a></td>\n" +
         		"\t<td><a href=\"/user/list/" + FORM_ORDERBY_NOME + "\"><b>Usuario</b></a></td>\n" +
-        		"\t<td><a href=\"/user/list/" + FORM_ORDERBY_IDADE + "\"><b>Idade</b></a></td>\n" +
+        		"\t<td><a href=\"/user/list/" + FORM_ORDERBY_DATA_NASCIMENTO + "\"><b>Idade</b></a></td>\n" +
         		"\t<td width=\"100\" align=\"center\"><b>Detalhar</b></td>\n" +
         		"\t<td width=\"100\" align=\"center\"><b>Atualizar</b></td>\n" +
         		"\t<td width=\"100\" align=\"center\"><b>Excluir</b></td>\n" +
@@ -142,38 +146,41 @@ public class UserService {
 		List<User> users;
 		if (orderBy == FORM_ORDERBY_Id) {                 	users = userDAO.getOrderByID();
 		} else if (orderBy == FORM_ORDERBY_NOME) {		users = userDAO.getOrderByUser();
-		} else if (orderBy == FORM_ORDERBY_IDADE) {			users = userDAO.getOrderByIdade();
+		} else if (orderBy == FORM_ORDERBY_DATA_NASCIMENTO) {			users = userDAO.getOrderByDataNascimento();
 		} else {											users = userDAO.get();
 		}
 
 		int i = 0;
-		String bgcolor = "#09081C";
+		String bgcolor = "";
+		String color = "";
 		for (User p : users) {
 			bgcolor = (i++ % 2 == 0) ? "#09081C" : "#dddddd";
-			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
-            		  "\t<td>" + p.getId() + "</td>\n" +
-            		  "\t<td>" + p.getUsuario() + "</td>\n" +
-            		  "\t<td>" + p.getIdade() + "</td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/" + p.getId() + "\"><img src=\"/resources/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/user/update/" + p.getId() + "\"><img src=\"/resources/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteUser('" + p.getId() + "', '" + p.getUsuario() + "', '" + p.getNome() + "');\"><img src=\"/resources/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "</tr>\n";
+			color = (i % 2 == 0) ? "#09081C" : "#dddddd";
+			list += "\n<tr bgcolor=\"" + bgcolor + "\">\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getId() + "</td>\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getUsuario() + "</td>\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getDataNascimento().toString() + "</td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"/user/" + p.getId() + "\"><img src=\"/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"/user/update/" + p.getId() + "\"><img src=\"/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteUser('" + p.getId() + "', '" + p.getUsuario() + "', '" + p.getNome() + "');\"><img src=\"/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"</tr>\n";
 		}
 		list += "</table>";		
 		form = form.replaceFirst("<LISTAR-USER>", list);				
 	}
 	
-	public Object insert(Request request, Response response) {
+	public Object insert(Request request, Response response) throws Exception{
 		String nome = request.queryParams("nome");
 		String usuario = request.queryParams("usuario");
 		String senha = request.queryParams("senha");
 		String email = request.queryParams("email");
-		int idade = Integer.parseInt(request.queryParams("idade"));
+		String descricao = request.queryParams("descricao");
+		LocalDate dataNascimento = LocalDate.parse(request.queryParams("dataNascimento"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		boolean gerenciador = Boolean.parseBoolean(request.params("gerenciador"));
 		
 		String resp = "";
 		
-		User user = new User(-1, usuario, senha, nome, email, idade, gerenciador );
+		User user = new User(-1, usuario, DAO.toMD5(senha), nome, email, descricao, dataNascimento, gerenciador );
 		
 		if(userDAO.insert(user) == true) {
             resp = "User (" + usuario + ") inserido!";
@@ -232,17 +239,17 @@ public class UserService {
 		return form;
 	}			
 	
-	public Object update(Request request, Response response) {
+	public Object update(Request request, Response response) throws Exception{
         int id = Integer.parseInt(request.params(":id"));
 		User user = userDAO.get(id);
         String resp = "";       
 
         if (user != null) {
-        	user.setNome(request.queryParams("nome"));
         	user.setUsuario(request.queryParams("usuario"));
-        	user.setSenha(request.queryParams("senha"));
+        	user.setSenha(DAO.toMD5(request.queryParams("senha")));
         	user.setEmail(request.queryParams("email"));
-        	user.setIdade(Integer.parseInt(request.queryParams("idade")));
+        	user.setNome(request.queryParams("nome"));
+        	user.setDataNascimento(LocalDate.parse(request.queryParams("dataNascimento"), DateTimeFormatter.ofPattern("yyyy-MM-dd")));
 			user.setGerenciador(Boolean.parseBoolean(request.queryParams("gerenciador")));
         	userDAO.update(user);
         	response.status(200); // success
@@ -270,6 +277,45 @@ public class UserService {
             resp = "User (" + id + ") não encontrado!";
         }
 		makeForm();
+		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
+	}
+	
+	public Object insertUser(Request request, Response response)throws Exception {
+		String nome = request.queryParams("nome");
+		String usuario = request.queryParams("usuario");
+		String senha = request.queryParams("senha");
+		String email = request.queryParams("email");
+		String descricao = "";
+		LocalDate dataNascimento = LocalDate.parse(request.queryParams("dataNascimento"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		boolean gerenciador = false;
+		
+		String resp = "";
+		
+		User user = new User(-1, usuario, DAO.toMD5(senha), nome, email, descricao, dataNascimento, gerenciador );
+		
+		if(userDAO.insert(user) == true) {
+            resp = "Conta criada com sucesso!";
+            response.status(201); // 201 Created
+		} else {
+			resp = "Falha ao criar conta!";
+			response.status(404); // 404 Not found
+		}
+			
+		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
+	}
+		
+	public Object login(Request request, Response response) {
+		String usuario = request.queryParams("usuario");
+		String senha = request.queryParams("senha");
+		
+		String resp = "";
+		
+		if(userDAO.autenticar(usuario, senha)) {
+			resp = "Bem vindo(a)!";
+		}else {
+			resp = "Usuario e/ou senha inválidos!";
+		}
+		
 		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
 	}
 }

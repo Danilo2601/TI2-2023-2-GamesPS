@@ -1,12 +1,15 @@
 package model;
 
+import java.time.LocalDate;
+
 public class User {
 	private int id;
 	private String usuario;
 	private String senha;
 	private String nome;
 	private String email;
-	private int idade;
+	private String descricao;
+	private LocalDate dataNascimento;
 	private boolean gerenciador;
 	
 	public User() {
@@ -15,17 +18,19 @@ public class User {
 		this.senha = "";
 		this.nome = "";
 		this.email = "";
-		this.idade = 18;
+		this.setDescricao("");
+		this.dataNascimento = LocalDate.now();
 		this.gerenciador = false;
 	}
 	
-	public User(int id, String usuario, String senha, String nome, String email,  int idade, boolean gerenciador) {
+	public User(int id, String usuario, String senha, String nome, String email, String descricao,  LocalDate dataNascimento, boolean gerenciador) {
 		this.id = id;
 		this.usuario = usuario;
 		this.senha = senha;
 		this.nome = nome;
 		this.email = email;
-		this.idade = idade;
+		this.descricao = descricao;
+		this.dataNascimento = dataNascimento;
 		this.gerenciador = gerenciador;
 	}
 
@@ -53,13 +58,7 @@ public class User {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getIdade() {
-		return idade;
-	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-
+	
 	public String getEmail() {
 		return email;
 	}
@@ -73,6 +72,22 @@ public class User {
 	}
 	public void setGerenciador(boolean gerenciador){
 		this.gerenciador = gerenciador;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 	
 	

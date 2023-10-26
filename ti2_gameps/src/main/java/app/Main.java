@@ -24,7 +24,11 @@ public class Main {
         post("/user/update/:id", (request, response) -> userService.update(request, response));
            
         get("/user/delete/:id", (request, response) -> userService.delete(request, response));
+        
+        post("/gamesps/cadastro", (request, response) -> userService.insertUser(request, response));
+        
+        post("/gamesps/login", (request,response) -> userService.login(request, response));
 
-             
+        
     }
 }
