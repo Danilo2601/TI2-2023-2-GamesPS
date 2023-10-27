@@ -48,7 +48,7 @@ function onLoad() {
 <body id="pag">
     <table width="80%" bgcolor="#f3f3f3" align="center">
     <tr>
-    <td align="left"><font size="+2">Novo Produto</b></font></td>
+    <td align="left"><font size="+2">Novo Jogo</b></font></td>
     <td><input type="hidden" id="msg" name="msg" value=""></td>
     </tr>
     </table>
@@ -57,8 +57,11 @@ function onLoad() {
     <p ADICIONE></p>
     
     <LISTAR-PRODUTO>
-</body>
-header{
+
+<style>
+* {
+	box-sizing: border-box;
+}header{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #09081C;
   background-size: cover;
@@ -134,4 +137,53 @@ header{
       top {margin-left: -10vw;}
   }
 }
+body {
+	background-color: white;
+}
+
+
+.input--main__style {
+	background-color: #00FF00;
+}
+
+.input--button {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: medium;
+	border-color: transparent;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.input--register {
+	display: inline;
+}
+
+input {
+	display: block;
+	border-radius: 7px;
+	padding: 10px;
+	border-style: solid;
+	border-color: lightgray;
+	color: black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+form p {
+	text-align: initial;
+	display: inline;
+	margin-left: 15px;
+}
+
+.p--nomargin {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+
+</style>
+</body>
 </html>

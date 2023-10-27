@@ -154,7 +154,7 @@ public class UserDAO extends DAO {
 		
 		try {
 			Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-			String sql = "SELECT * FROM users WHERE usuario = '" +usuario+ "' AND senha = '" +senha+ "'";
+			String sql = "SELECT * FROM users WHERE usuario LIKE'" +usuario+ "' AND senha LIKE '" +senha+ "'";
 			ResultSet rs = st.executeQuery(sql);	
 	        if(rs.next()){            
 	        	 resp = rs.getBoolean("gerenciador");
