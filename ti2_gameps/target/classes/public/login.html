@@ -32,7 +32,7 @@
           <h2 class="text-center" style="color: #FFFFFF;">Login</h2>
         </div>
         <div class="card-body col-md-12">
-          <form action ="gamesps/login" method="post">
+          <form action ="gameps/login" method="post">
             <div class="form-group col-md-12">
               <label for="usuario" class="form-label" id="loginLabel">
                 <h4 style="color: #FFFFFF;">Usuário</h4>
@@ -71,7 +71,7 @@
           </div>
           <div class="modal-body">
             <div id="login-box" class="col-md-12">
-              <form class="form-register" action="gamesps/cadastro"  method="post" id="form-add">
+              <form class="form--register" action="/gameps/cadastro"  method="post" id="form-add">
                 <h3 class="text-center text-info">
                   <h3 style="color: #FFFFFF;">Novo Usuário</h3>
                 </h3>
@@ -94,7 +94,7 @@
                   <input type="email" name="email" id="txt_email" class="form-control">
                 </div>
                 <div class="form-group">
-                  <label id='labelDate' for="data_nascimento" class="text-info">
+                  <label id='labelDate' for="dataNascimento" class="text-info">
                     <h5 style="color: #FFFFFF;">Data de Nascimento</h5>
                   </label><br>
                   <input type="date" class="form-control" id="txt_data_nascimento" name="dataNascimento">
@@ -111,14 +111,14 @@
                   </label><br>
                   <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
                 </div>
+            <button type="submit" id="btn_salvar" class="btn btn-info"
+              style="color: #FFFFFF; background-color: #144290;">Cadastrar</button>
               </form>
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal"
               style="color: #FFFFFF; background-color: #144290;">Cancelar</button>
-            <button type="submit" id="btn_salvar" class="btn btn-info"
-              style="color: #FFFFFF; background-color: #144290;">Cadastrar</button>
           </div>
         </div>
       </div>

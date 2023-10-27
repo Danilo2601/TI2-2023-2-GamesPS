@@ -25,9 +25,9 @@ public class Main {
            
         get("/user/delete/:id", (request, response) -> userService.delete(request, response));
         
-        post("/gamesps/cadastro", (request, response) -> userService.insertUser(request, response));
+        post("/gameps/cadastro", (request, response) -> userService.insertUser(request, response));
         
-        post("/gamesps/login", (request,response) -> userService.login(request, response));
+        post("/gameps/login", (request,response) -> userService.login(request, response));
 
         
     }

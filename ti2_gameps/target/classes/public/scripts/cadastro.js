@@ -104,18 +104,3 @@ senha2.addEventListener('keyup', () => {
 })
 
 
-btn_salvar.addEventListener('click', () => {
-    if (validEmail && validLogin && validNome && validSenha && validSenha2 && validDataNascimento) {
-		
-		alert('Conta Criada')
-       window.location.href = '/gamesps/cadastro';
-
-    } else {
-
-        alert('Cadastro Inválido')
-        window.location.href = 'login.html';
-        
-    }
-
-
-})

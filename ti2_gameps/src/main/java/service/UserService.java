@@ -95,13 +95,13 @@ public class UserService {
 			umUser += "\t\t</tr>";
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Usuário: <input class=\"input--register\" type=\"text\" name=\"usuario\" placeholder =\""+ usuario +"\"></td>";
-			umUser += "\t\t\t<td>Senha: <input class=\"input--register\" type=\"text\" name=\"senha\" placeholder=\""+ senha +"\"></td>";
+			umUser += "\t\t\t<td>Senha: <input class=\"input--register\" type=\"password\" name=\"senha\" placeholder=\""+ senha +"\"></td>";
 			umUser += "\t\t\t<td>E-mail: <input class=\"input--register\" type=\"email\" name=\"email\" placeholder=\""+ email +"\"></td>";
 			umUser += "\t\t</tr>";
 			umUser += "\t\t<tr>";
 			umUser += "\t\t\t<td>&nbsp;Nome: <input class=\"input--register\" type=\"text\" name=\"nome\" placeholder=\""+ nome + "\"></td>";
-			umUser += "\t\t\t<td>Idade: <input class=\"input--register\" type=\"date\" name=\"dataNascimento\" placeholder=\""+ dataNascimento + "\"></td>";
-			umUser += "\t\t\t<td>Gerenciador: <input class=\"input--register\" type=\"text\" name=\"idade\" placeholder=\""+ gerenciador + "\"></td>";
+			umUser += "\t\t\t<td>Data de Nascimento: <input class=\"input--register\" type=\"date\" name=\"dataNascimento\" placeholder=\""+ dataNascimento + "\"></td>";
+			umUser += "\t\t\t<td>Gerenciador: <input class=\"input--register\" type=\"text\" name=\"gerenciador\" placeholder=\""+ gerenciador + "\"></td>";
 			umUser += "\t\t\t<td align=\"center\"><input type=\"submit\" value=\""+ buttonLabel +"\" class=\"input--main__style input--button\"></td>";
 			umUser += "\t\t</tr>";
 			umUser += "\t</table>";
@@ -285,21 +285,29 @@ public class UserService {
 		String usuario = request.queryParams("usuario");
 		String senha = request.queryParams("senha");
 		String email = request.queryParams("email");
-		String descricao = "";
-		LocalDate dataNascimento = LocalDate.parse(request.queryParams("dataNascimento"), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		String dataNascimentoParam = request.queryParams("dataNascimento");
+		LocalDate dataNascimento;
 		boolean gerenciador = false;
+				
+		if(dataNascimentoParam != null && !dataNascimentoParam.isEmpty()) {
+			dataNascimento = LocalDate.parse(dataNascimentoParam, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		}else {
+			dataNascimento = LocalDate.now();
+		}
 		
 		String resp = "";
 		
-		User user = new User(-1, usuario, DAO.toMD5(senha), nome, email, descricao, dataNascimento, gerenciador );
+		User user = new User(-1, usuario, DAO.toMD5(senha), nome, email, null, dataNascimento, gerenciador );
 		
 		if(userDAO.insert(user) == true) {
             resp = "Conta criada com sucesso!";
             response.status(201); // 201 Created
 		} else {
 			resp = "Falha ao criar conta!";
-			response.status(404); // 404 Not found
+			response.status(400); // 404 Not found
 		}
+		
+		response.redirect("/login.html");
 			
 		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
 	}
@@ -311,10 +319,14 @@ public class UserService {
 		String resp = "";
 		
 		if(userDAO.autenticar(usuario, senha)) {
+			response.redirect("/index.html");
 			resp = "Bem vindo(a)!";
 		}else {
-			resp = "Usuario e/ou senha inválidos!";
+			response.redirect("/login.html");
+			resp = "Usuario e/ou senha inválidos!";	
 		}
+		
+		
 		
 		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
 	}
