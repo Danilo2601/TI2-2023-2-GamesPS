@@ -30,5 +30,6 @@ public class Main {
         post("/gameps/login", (request,response) -> userService.login(request, response));
         
         get("/gameps/logout", (request,response) -> userService.logout(request, response));
+        
     }
 }

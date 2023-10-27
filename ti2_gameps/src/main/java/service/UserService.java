@@ -319,6 +319,7 @@ public class UserService {
 		boolean gerenciador = userDAO.verificarGerenciador(usuario,senha);
 		String resp = "";
 		
+		
 		if(userDAO.autenticar(usuario, senha)) {
 			Session session = request.session(true);
 			session.attribute("usuario", usuario);
