@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head id="cabeca">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	let url = window.location.href;
+	let id = url.substring(url.lastIndexOf('#')+1);
+	const cabeca = document.getElementById("cabeca")
+	cabeca.innerHTML = `<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta http-equiv="refresh" content=1;url="/detalhes/${id}">`
+</script>
+</body>
+</html>
