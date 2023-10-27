@@ -156,17 +156,21 @@ public class JogoService {
 		
 		int i = 0;
 		String bgcolor = "";
+		String color = "";
 		for (Jogo p : jogos) {
-			bgcolor = (i++ % 2 == 0) ? "#fff5dd" : "#dddddd";
-			list += "\n<tr bgcolor=\""+ bgcolor +"\">\n" + 
-            		  "\t<td>" + p.getId() + "</td>\n" +
-            		  "\t<td>" + p.getNome() + "</td>\n" +
-            		  "\t<td>" + p.getEmpresa() + "</td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/jogo/" + p.getId() + "\"><img src=\"/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"/jogo/update/" + p.getId() + "\"><img src=\"/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteJogo('" + p.getId() + "', '" + p.getNome() + "');\"><img src=\"/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
-            		  "</tr>\n";
+			bgcolor = (i++ % 2 == 0) ? "#09081C" : "#dddddd";
+			color = (i % 2 == 0) ? "#09081C" : "#dddddd";
+			list += "\n<tr bgcolor=\"" + bgcolor + "\">\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getId() + "</td>\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getNome() + "</td>\n" +
+					"\t<td style=\"color: " + color + ";\">" + p.getEmpresa() + "</td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"/user/" + p.getId() + "\"><img src=\"/image/detail.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"/user/update/" + p.getId() + "\"><img src=\"/image/update.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"\t<td align=\"center\" valign=\"middle\"><a href=\"javascript:confirmarDeleteUser('" + p.getId() + "', '" + p.getNome() + "', '" + p.getNome() + "');\"><img src=\"/image/delete.png\" width=\"20\" height=\"20\"/></a></td>\n" +
+					"</tr>\n";
 		}
+		
+		
 		list += "</table>";		
 		form = form.replaceFirst("<LISTAR-PRODUTO>", list);	
 

@@ -307,7 +307,9 @@ public class UserService {
 			resp = "Falha ao criar conta!";
 			response.status(400); // 404 Not found
 		}
-					
+		
+		response.redirect("/login.html");
+			
 		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
 	}
 		
@@ -331,7 +333,7 @@ public class UserService {
 		
 		
 		
-		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
+		return resp;
 	}
 	
 	public Object logout(Request request, Response response) {

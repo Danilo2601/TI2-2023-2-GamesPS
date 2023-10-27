@@ -45,7 +45,7 @@ public class SearchService {
 		for(Jogo p : jogos) 
 		{
 			
-			pegaJogo += "<a class=\"game-card\">\n";
+			pegaJogo += "<a class=\"game-card\" href=\"/jogagens.html#"+p.getId()+"\">\n";
 			pegaJogo += "<img src=\""+ p.getImagens()[0] +"\">";
 			pegaJogo += "<h3>"+ p.getNome() +"</h3>";
 			pegaJogo += "</a>\r\n";
