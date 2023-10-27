@@ -148,4 +148,22 @@ public class UserDAO extends DAO {
 		}
 		return resp;
 	}
+	
+	public boolean verificarGerenciador(String usuario, String senha) {
+		boolean resp = false;
+		
+		try {
+			Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+			String sql = "SELECT * FROM users WHERE usuario = '" +usuario+ "' AND senha = '" +senha+ "'";
+			ResultSet rs = st.executeQuery(sql);	
+	        if(rs.next()){            
+	        	 resp = rs.getBoolean("gerenciador");
+	        st.close();
+		}
+	        } catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		
+		return resp;
+	}
 }

@@ -28,7 +28,7 @@ public class Main {
         post("/gameps/cadastro", (request, response) -> userService.insertUser(request, response));
         
         post("/gameps/login", (request,response) -> userService.login(request, response));
-
         
+        get("/gameps/logout", (request,response) -> userService.logout(request, response));
     }
 }

@@ -11,6 +11,7 @@ import DAO.UserDAO;
 import model.User;
 import spark.Request;
 import spark.Response;
+import spark.Session;
 
 
 public class UserService {
@@ -315,10 +316,13 @@ public class UserService {
 	public Object login(Request request, Response response) {
 		String usuario = request.queryParams("usuario");
 		String senha = request.queryParams("senha");
-		
+		boolean gerenciador = userDAO.verificarGerenciador(usuario,senha);
 		String resp = "";
 		
 		if(userDAO.autenticar(usuario, senha)) {
+			Session session = request.session(true);
+			session.attribute("usuario", usuario);
+			session.attribute("gerenciador", gerenciador);
 			response.redirect("/index.html");
 			resp = "Bem vindo(a)!";
 		}else {
@@ -328,6 +332,17 @@ public class UserService {
 		
 		
 		
-		return form.replaceFirst("<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\"\">", "<input type=\"hidden\" id=\"msg\" name=\"msg\" value=\""+ resp +"\">");
+		return resp;
+	}
+	
+	public Object logout(Request request, Response response) {
+		Session session = request.session(false);
+		
+		if(session != null) {
+			session.invalidate();
+		}
+		
+		response.redirect("/login.html");
+		return "Deslogado com sucesso!";
 	}
 }
