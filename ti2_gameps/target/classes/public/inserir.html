@@ -1,16 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset = UTF-8" http-equiv="content-type">
-
-<title>Gerenciamento de Usuários</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de jogos</title>
 </head>
 
 <script type="text/javascript">
 
-function confirmarDeleteUser(id, usuario, nome) {  
+function confirmarDeleteJogo(id, nome) {  
 	
-    if (confirm('Confirmar a exclusão do usuário [' + usuario + '] (ID ' + id + ') do nome [' + nome + ']?')) {  
-        location.href = '/user/delete/' + id;
+    if (confirm('Confirmar a exclusão do jogo [' + nome + '] (ID ' + id + ')')) {  
+        location.href = '/jogo/delete/' + id;
     }
 }
 function onLoad() {
@@ -19,7 +20,6 @@ function onLoad() {
     }
 }
 </script>
-
 <header id="header">
     <button onclick="toggleSidebar()" class="btn_icon_header">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -45,18 +45,19 @@ function onLoad() {
     </div>
 </header>
 
-
-<body onload="onLoad()">
-	<h1></h1>
-	<input type="hidden" id="msg" name="msg" value="">
-    <UM-USER>
-	<br>
-	<LISTAR-USER>
-	<style>
-* {
-	box-sizing: border-box;
-}
-
+<body id="pag">
+    <table width="80%" bgcolor="#f3f3f3" align="center">
+    <tr>
+    <td align="left"><font size="+2">Novo Produto</b></font></td>
+    <td><input type="hidden" id="msg" name="msg" value=""></td>
+    </tr>
+    </table>
+    <br>
+   
+    <p ADICIONE></p>
+    
+    <LISTAR-PRODUTO>
+</body>
 header{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #09081C;
@@ -133,54 +134,4 @@ header{
       top {margin-left: -10vw;}
   }
 }
-
-body {
-	background-color: white;
-}
-
-
-.input--main__style {
-	background-color: #00FF00;
-}
-
-.input--button {
-	font-weight: bold;
-	font-family: Arial;
-	font-size: medium;
-	border-color: transparent;
-	display: block;
-	margin: 0px auto;
-	margin-bottom: 10px;
-	color: white;
-}
-
-.input--register {
-	display: inline;
-}
-
-input {
-	display: block;
-	border-radius: 7px;
-	padding: 10px;
-	border-style: solid;
-	border-color: lightgray;
-	color: black;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-form p {
-	text-align: initial;
-	display: inline;
-	margin-left: 15px;
-}
-
-.p--nomargin {
-	margin-left: 0px;
-	margin-right: 10px;
-}
-
-
-</style>
-</body>
 </html>

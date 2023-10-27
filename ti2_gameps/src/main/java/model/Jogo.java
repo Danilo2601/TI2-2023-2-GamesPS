@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Arrays;
+
 public class Jogo {
 	private int id;
 	private String nome;
@@ -9,21 +11,23 @@ public class Jogo {
 	private double avaliacao;
 	private String[] links;
 	private String especificacoes;
+	private String[] imagens;
 	
 	
 	
 	public Jogo() {
 		this.id = -1;
 		this.nome = "";
-		this.categorias[0] = -1;
+		this.categorias = new int[5];
 		this.empresa = "";
 		this.descricao = "";
 		this.avaliacao = -1.0;
-		this.links[0] = "";
+		this.links = new String[5];
 		this.especificacoes = "";
+		this.setImagens(new String[5]);
 	}
 	
-	public Jogo(int id, String nome, int[] categorias, String empresa, String descricao, double avaliacao, String[] links, String especificacoes) {
+	public Jogo(int id, String nome, int[] categorias, String empresa, String descricao, double avaliacao, String[] links, String especificacoes,String[] imagens) {
 		this.id = id;
 		this.nome = nome;
 		this.categorias = categorias;
@@ -32,9 +36,25 @@ public class Jogo {
 		this.avaliacao = avaliacao;
 		this.links = links;
 		this.especificacoes = especificacoes;
+		this.imagens = imagens;
 	}
 	
-	public int getID() {
+	public Jogo(int id, String nome, Integer[] categorias, String empresa, String descricao, double avaliacao, String[] links, String especificacoes,String[] imagens) {
+		this.id = id;
+		this.nome = nome;
+		
+		int[] categ = Arrays.stream(categorias).mapToInt(Integer::intValue).toArray();
+		
+		this.categorias = categ;
+		this.empresa = empresa;
+		this.descricao = descricao;
+		this.avaliacao = avaliacao;
+		this.links = links;
+		this.especificacoes = especificacoes;
+		this.imagens = imagens;
+	}
+	
+	public int getId() {
 		return id;
 	}
 	
@@ -42,7 +62,7 @@ public class Jogo {
 		return nome;
 	}
 	
-	public void setID(int id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	
@@ -52,13 +72,8 @@ public class Jogo {
 	
 	
 	@Override
-	public String toString() {
-		return "Jogo[id = "+id+", nome = "+nome+", categorias = "+categorias+", publisher = "+empresa+", descrição =  "+descricao+" ]";
-	}
-	
-	@Override
 	public boolean equals(Object obj) {
-		return (this.getID() == ((Jogo) obj).getID());
+		return (this.getId() == ((Jogo) obj).getId());
 	}
 
 	public int[] getCategorias() {
@@ -107,6 +122,14 @@ public class Jogo {
 
 	public void setEspecificacoes(String especificacoes) {
 		this.especificacoes = especificacoes;
+	}
+
+	public String[] getImagens() {
+		return imagens;
+	}
+
+	public void setImagens(String[] imagens) {
+		this.imagens = imagens;
 	}	
 	
 }
