@@ -57,5 +57,9 @@ public class Main {
         get("/home/*",(request,response) -> principalService.criaPag(request, response));
         
         get("/detalhes/:id",(request,response) -> paginaService.preencher(request, response));
+        
+        get("/usuario.html", (request, response) -> paginaService.loadHeader(request, response));
+        
+        get("/pesquisa.html", (request, response)-> paginaService.loadHeader(request, response));
     }
 }
