@@ -12,11 +12,13 @@ import model.User;
 import spark.Request;
 import spark.Response;
 import spark.Session;
+import service.PaginaService;
 
 
 public class UserService {
 
 	private UserDAO userDAO = new UserDAO();
+	private PaginaService paginaService = new PaginaService();
 	private String form;
 	private final int FORM_INSERT = 1;
 	private final int FORM_DETAIL = 2;
@@ -325,6 +327,7 @@ public class UserService {
 			session.attribute("usuario", usuario);
 			session.attribute("gerenciador", gerenciador);
 			response.redirect("/index.html");
+			paginaService.loadHeader(gerenciador);
 			resp = "Bem vindo(a)!";
 		}else {
 			response.redirect("/login.html");
