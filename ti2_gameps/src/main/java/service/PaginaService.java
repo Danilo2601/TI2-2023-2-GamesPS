@@ -71,7 +71,7 @@ public class PaginaService {
 		return form;
 	}
 
-	public Object loadHeader(boolean gerenciador){
+	public Object loadHeader(boolean gerenciador, String usuario){
 		form = "";
 		String header = "";
 		if(gerenciador){
@@ -94,7 +94,7 @@ public class PaginaService {
 			+"				<a href=\"/crud_jogo.html\" >Jogos</a>"
 			+"				<a href=\"/crudUser.html\">Usuários</a>"
 			+"				<a href=\"/pesquisa.html\">Search</a>"
-			+"				<a href=\"/usuario.html\">Account</a>"
+			+"				<a href=\"/usuario.html\">"+usuario+"</a>"
 			+"			</div>";
 
 		}else{
@@ -115,7 +115,7 @@ public class PaginaService {
 			+"				</svg>"
 			+"				</button>"
 			+"				<a href=\"/pesquisa.html\">Search</a>"
-			+"				<a href=\"/usuario.html\">Account</a>"
+			+"				<a href=\"/usuario.html\">"+usuario+"</a>"
 			+"			</div>";
 		}
 

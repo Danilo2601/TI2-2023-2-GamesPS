@@ -9,34 +9,16 @@
 </head>
 
 <header id="header">
-    <button onclick="toggleSidebar()" class="btn_icon_header">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-
-    </button>
-    <div class="logo_header">
-        <a href="/index.html">
-        <img src="/image/logo-ti2.png" alt="Logo">
-      </a>
-    </div>
-    <div class="navigation_header" id="navigation_header">
-        <button onclick="toggleSidebar()" class="btn_icon_header" id="btn2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
-        </button>
-        <a href="/crud_jogo.html">Jogos</a>
-        <a href="/crudUser.html">Usuários</a>
-        <a href="/pesquisa.html">Search</a>
-        <a href="/usuario.html">Account</a>
-    </div>
+    <HEADER>
   <style>
-    html {
-      background-color: rgb(12, 12, 74);
-    }
+	html{
+  background-color: rgb(12, 12, 74);
+}
+* {
+	box-sizing: border-box;
+}
 
-    /* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
   /* Header */
   
   /* Style the header with a grey background and some padding */
@@ -45,7 +27,7 @@
   background-color: #09081C;
   background-size: cover;
   color: white;
-  height: 130px;
+  height: 90px;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
@@ -55,6 +37,7 @@
   box-shadow: 1px 1px 4px whitesmoke; 
   justify-content: space-between;
   padding: 0 10%;
+  width: 100%;
 }
 
 .logo_header a{
@@ -120,205 +103,241 @@
   
 
 
+/* Style para a Barra de Pesquisa */
 
-    /* Style para a Barra de Pesquisa */
-
-    input[type="text"] {
-      position: relative;
-      display: flex;
-      background-color: white;
-      height: 40px;
-      border-radius: 30px;
-      padding: 10px;
-      width: 90%;
-      border: none;
-      font-size: 16px;
-      display: inline-block;
-    }
-
-
-
-    .search-area {
-
-      padding: 30px;
-      border-bottom: 3px solid rgb(12, 12, 74);
-    }
-
-
-    /* input[type="text"] {
-      height: 100%;
-
-      background: none;
-      border: 0;
-      outline: 0;
-      flex: 1;
-      padding: 10px;
-      font-size: 16px;
-    } */
-
+.autocomplete {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 90%;
   
+  margin: 0 auto;
+  margin-top: 10px;
+}
 
-    
+.lupa-azul{
+  cursor: pointer;
+}
+.lupa-branca {
+  display: none;
+}
 
-    
-
-    .content {
-      margin: 0;
-      background-color: rgb(211, 215, 211);
-      height: 100%;
-    }
-
-    /* Fim Style para a Barra de Pesquisa */
-
-    /* Style para o footer */
-    footer {
-      background-color: #09081C;
-      height: 130px;
-      margin-top: 540px;
-    }
-
-    /* Estilos para os cards dos jogos */
+.search-area{
+  
+  padding: 30px;
+  border-bottom: 3px solid rgb(12, 12, 74);
+}
 
 
-    /* Define a animação de fade */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateX(60px);
-      }
+input[type="text"] {
+  background: none;
+  border: 0;
+  outline: 0;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
 
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
+.search-btn {
+  width: 50px;
+  height: 50px;
+}
 
-    .game-cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      justify-content: flex-start;
-      margin-top: 50px;
-      margin-left: 60px;
+.autocomplete-items {
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-    }
-    
-    #corpo{
-		margin: 0px;
-	}
+.autocomplete-items div {
+  padding: 10px;
+  border-radius: 40px;
+  outline: 0;
+  cursor: pointer;
+  background-color: #fff;
+}
 
-    .game-card {
-      width: 300px;
-      background-color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 0.5s ease-in-out;
-      transition: transform 0.1s ease-in-out;
-    }
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
 
-    .game-card:hover {
-      transform: scale(1.05);
-    }
+.content {
+  margin: 0;
+  background-color: rgb(211, 215, 211);
+  height: 100%;
+}
 
-    .game-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
+/* Fim Style para a Barra de Pesquisa */
 
-    .game-card h3 {
-      font-size: 18px;
-      margin-bottom: 5px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: rgb(37, 36, 36);
-    }
+ /* Style para o footer */
+ footer{
+  background-color: black;
+  height: 130px;
+  margin-top: 540px;
+ }
 
+ /* Estilos para os cards dos jogos */
 
 
-    /* Estilos responsivos para os cards dos jogos */
-    @media screen and (max-width: 768px) {
-      .game-card {
-        width: calc(70% - 20px);
-      }
-    }
+/* Define a animação de fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-    /* Style para o botão clear */
-    .search-btn {
-      display: inline-block;
-      background-color: cadetblue;
-      color: #ffffff;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 13px;
-      cursor: pointer;
-      margin-top: 10px;
-      margin-left: 10px;
-      height: 50px;
-      width: max-content;
-      transition: 0.3s all ease-in;
-    }
-    .search-btn:hover {
-      background-color: #09081C;
-      transform: scale(1.05);
-    }
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: flex-start; 
+  margin-top: 50px;
+  margin-left: 60px;
+  
+}
+
+.game-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  text-decoration: none; 
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.game-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(37, 36, 36);
+}
 
 
-    /*-------------------------------------------------------------------*/
-    /*filtragem*/
 
-    /*.dropdown-menu {
-  border-radius: 15px; /* Adiciona bordas arredondadas */
-    /*
-  font-size: 16px; /* Aumenta o tamanho da fonte */
-    /*
-  padding: 5px; /* Ajusta o preenchimento interno */
-    /*
-  width: 200px; /* Define uma largura personalizada */
-    /*
+/* Estilos responsivos para os cards dos jogos */
+@media screen and (max-width: 768px) {
+  .game-card {
+    width: calc(70% - 20px);
+  }
+}
+
+/* Style para o botão clear */
+.clear-btn {
+  background-color: cadetblue;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+/*-------------------------------------------------------------------*/
+/*filtragem*/
+
+/*.dropdown-menu {
+  border-radius: 15px; /* Adiciona bordas arredondadas *//*
+  font-size: 16px; /* Aumenta o tamanho da fonte *//*
+  padding: 5px; /* Ajusta o preenchimento interno *//*
+  width: 200px; /* Define uma largura personalizada *//*
   margin-top: 15px;
   margin-left: 55px;
 }
 */
+
+
   </style>
 </header>
 
-<body id="corpo">
+<body>
   <div tabindex="0" class="content" id="content">
     <div class="search-area">
       <div class="autocomplete" id="ator">
-        <form class="form--search" action="/pesquisa/" method="get" id="form-search">
-          <input type="text" id="search-bar" name="searcher" placeholder="Digite o nome do jogo">
-            
-            <input type="submit" value="Search" class="search-btn">
-          </input>
-          
+		  <form class="form--search" action="/pesquisa/" method="get" id="form-search">
+        <input type="text" id="search-bar" name="searcher" placeholder="Digite o nome do jogo">
+        <input type="submit" value="Search" class="search-btn">
+          <img class="lupa-azul" src="./loupe-blue.svg" alt="">
+          <img class="lupa-branca" src="./loupe-white.svg" alt="">
+        </input>
+        <button class="clear-btn" onclick="clearGameCards()">Limpar</button>
         </form>
-        
+        <div class="autocomplete-items"></div>
       </div>
 
       <!-------------------------------------------------------------------->
 
-      <!-- <select class="dropdown-menu" id="flitargei">
+     <!-- <select class="dropdown-menu" id="flitargei">
         <option value=""><a class="dropdown-item" href="#">Show all</a></option>
         <option value="Everyone"><a class="dropdown-item" href="#">Everyone</a></option>
         <option value="Mature"><a class="dropdown-item" href="#">Mature</a></option>
         <option value="Teen"><a class="dropdown-item" href="#">Teen</a></option>
       </select>-->
-    </div>
+    </div> 
 
 
     <!-------------------------------------------------------------------->
     <div class="result-area">
       <div class="game-cards" id="game-cards">
-        <input type="hidden" id="msg" name="msg" value="">
-      </div>
+		  <input type="hidden" id="msg" name="msg" value="">
+	  </div>
     </div>
 
-    
+	<script>
+		
+		function clearGameCards() {
+  	const gameCardsContainer = document.getElementById("game-cards");
+  	gameCardsContainer.innerHTML = "";
+		}
+		
+		function colocaActionPeloAmordeDeus(){
+			const diva = document.getElementById("ator");
+			let nominho = document.getElementById("search-bar")
+			let alvo = nominho.value
+			console.log(alvo)
+			if(nominho == null) nominho = ""
+			diva.innerHTML = ` <form class="form--search" action="/pesquisa/${nominho}" method="get" id="form-search">
+        <input type="text" id="search-bar" name="searcher" placeholder="Digite o nome do jogo">
+        <input type="submit" value="Search" class="search-btn">
+          <img class="lupa-azul" src="./loupe-blue.svg" alt="">
+          <img class="lupa-branca" src="./loupe-white.svg" alt="">
+        </input>
+        <button class="clear-btn" onclick="clearGameCards()">Limpar</button>
+        </form>
+        <div class="autocomplete-items"></div>`
+		}
+	</script>
 </body>
 <footer></footer>
 

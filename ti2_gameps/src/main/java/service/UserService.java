@@ -12,7 +12,6 @@ import model.User;
 import spark.Request;
 import spark.Response;
 import spark.Session;
-import service.PaginaService;
 
 
 public class UserService {
@@ -324,10 +323,11 @@ public class UserService {
 		
 		if(userDAO.autenticar(usuario, senha)) {
 			Session session = request.session(true);
+			session.attribute("key", 1);
 			session.attribute("usuario", usuario);
 			session.attribute("gerenciador", gerenciador);
 			response.redirect("/index.html");
-			paginaService.loadHeader(gerenciador);
+			paginaService.loadHeader(gerenciador, usuario);
 			resp = "Bem vindo(a)!";
 		}else {
 			response.redirect("/login.html");

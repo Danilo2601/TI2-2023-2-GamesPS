@@ -10,14 +10,24 @@ import DAO.JogoDAO;
 import model.Jogo;
 import spark.Request;
 import spark.Response;
+import spark.Session;
 
 public class PrincipalService {
 	private JogoDAO jogoDAO = new JogoDAO();
+	private PaginaService paginaService = new PaginaService();
 	private String form;
 	
 	public Object criaPag(Request request,Response response) {
 		Path resourcePath = Paths.get("src", "main", "resources", "public");
-
+		
+		Session session = request.session();
+		if(session.attribute("key") != null) {
+			boolean gerenciador = session.attribute("gerenciador");
+			String usuario = session.attribute("usuario");
+			paginaService.loadHeader(gerenciador, usuario);
+		}else {
+			paginaService.loadHeader(false, "Account");
+		}
         
 	    Path filePath = resourcePath.resolve("principal.html"); 
 	    
