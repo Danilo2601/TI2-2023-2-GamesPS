@@ -9,6 +9,7 @@ import DAO.JogoDAO;
 import model.Jogo;
 import spark.Request;
 import spark.Response;
+import spark.Session;
 
 public class PaginaService {
 	private JogoDAO jogoDAO = new JogoDAO();
@@ -22,6 +23,16 @@ public class PaginaService {
 	    int id = Integer.parseInt(request.params(":id"));	
 	    
 	    Jogo jogo = jogoDAO.get(id);
+	    
+	    String header;
+	    Session session = request.session();
+		if(session.attribute("key") != null) {
+			boolean gerenciador = session.attribute("gerenciador");
+			String usuario = session.attribute("usuario");
+			header = loadHeader(gerenciador, usuario);
+		}else {
+			header = loadHeader(false, "Account");
+		}
 
 	    String nomeArquivo = ""+filePath;
 		form = "";
@@ -32,6 +43,8 @@ public class PaginaService {
 		    }
 		    entrada.close();
 		}  catch (Exception e) { System.out.println(e.getMessage()); }
+		
+		form = form.replaceFirst("<HEADER", header);
 		
 		String pegarJogo = "<div class=\"carousel-inner \">";
 		
@@ -71,11 +84,13 @@ public class PaginaService {
 		return form;
 	}
 
-	public Object loadHeader(boolean gerenciador, String usuario){
-		form = "";
+	public String loadHeader(boolean gerenciador, String usuario){
+		
 		String header = "";
+		
 		if(gerenciador){
-			header += "<button onclick=\"toggleSidebar()\" class=\"btn_icon_header\">"
+			header += "<header id = \"header\">"
+			+"				<button onclick=\"toggleSidebar()\" class=\"btn_icon_header\">"
 			+"				<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"currentColor\" class=\"bi bi-list\" viewBox=\"0 0 16 16\">"
 			+"					<path fill-rule=\"evenodd\" d=\"M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z\"/>"
 			+"				</svg>"
@@ -95,10 +110,12 @@ public class PaginaService {
 			+"				<a href=\"/crudUser.html\">Usuários</a>"
 			+"				<a href=\"/pesquisa.html\">Search</a>"
 			+"				<a href=\"/usuario.html\">"+usuario+"</a>"
-			+"			</div>";
+			+"			</div>"
+			+"		</header>";
 
 		}else{
-			header += "<button onclick=\"toggleSidebar()\" class=\"btn_icon_header\">"
+			header += "<header id =\"header\">"
+			+"				<button onclick=\"toggleSidebar()\" class=\"btn_icon_header\">"
 			+"				<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" fill=\"currentColor\" class=\"bi bi-list\" viewBox=\"0 0 16 16\">"
 			+"					<path fill-rule=\"evenodd\" d=\"M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z\"/>"
 			+"				</svg>"
@@ -116,10 +133,10 @@ public class PaginaService {
 			+"				</button>"
 			+"				<a href=\"/pesquisa.html\">Search</a>"
 			+"				<a href=\"/usuario.html\">"+usuario+"</a>"
-			+"			</div>";
+			+"			</div>"
+			+"		</header>";
 		}
 
-		form = form.replaceFirst("<HEADER>", header);
 
 		return header;
 	}

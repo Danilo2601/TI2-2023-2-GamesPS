@@ -19,20 +19,21 @@ public class PrincipalService {
 	
 	public Object criaPag(Request request,Response response) {
 		Path resourcePath = Paths.get("src", "main", "resources", "public");
-		
-		Session session = request.session();
-		if(session.attribute("key") != null) {
-			boolean gerenciador = session.attribute("gerenciador");
-			String usuario = session.attribute("usuario");
-			paginaService.loadHeader(gerenciador, usuario);
-		}else {
-			paginaService.loadHeader(false, "Account");
-		}
         
 	    Path filePath = resourcePath.resolve("principal.html"); 
 	    
 	    List<Jogo> jogos = jogoDAO.get();
-
+	    
+	    String header;
+	    Session session = request.session();
+		if(session.attribute("key") != null) {
+			boolean gerenciador = session.attribute("gerenciador");
+			String usuario = session.attribute("usuario");
+			header = paginaService.loadHeader(gerenciador, usuario);
+		}else {
+			header = paginaService.loadHeader(false, "Account");
+		}
+		
 	    String nomeArquivo = ""+filePath;
 		form = "";
 		try{
@@ -43,7 +44,7 @@ public class PrincipalService {
 		    entrada.close();
 		}  catch (Exception e) { System.out.println(e.getMessage()); }
 		
-
+		form = form.replaceFirst("<HEADER>", header);
 		
 		String pegaJogo1 = "";
 		

@@ -22,15 +22,15 @@ public class SearchService {
 		
 		Path resourcePath = Paths.get("src", "main", "resources", "public");
 		
+		String header;
 		Session session = request.session();
 		if(session.attribute("key") != null) {
 			boolean gerenciador = session.attribute("gerenciador");
 			String usuario = session.attribute("usuario");
-			paginaService.loadHeader(gerenciador, usuario);
+			header = paginaService.loadHeader(gerenciador, usuario);
 		}else {
-			paginaService.loadHeader(false, "Account");
+			header = paginaService.loadHeader(false, "Account");
 		}
-
 	        
 	    Path filePath = resourcePath.resolve("pesquisa.html"); 
 
@@ -48,7 +48,7 @@ public class SearchService {
 		    entrada.close();
 		}  catch (Exception e) { System.out.println(e.getMessage()); }
 		
-
+		form = form.replaceFirst("<HEADER>", header);
 		
 		String pegaJogo = "";
 		List<Jogo> jogos = jogoDAO.getSearch(alvo);
