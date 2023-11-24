@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de jogos</title>
+</head>
+
+<script type="text/javascript">
+
+function confirmarDeleteJogo(id, nome) {  
+	
+    if (confirm('Confirmar a exclusão do jogo [' + nome + '] (ID ' + id + ')')) {  
+        location.href = '/jogo/delete/' + id;
+    }
+}
+function onLoad() {
+    if(document.getElementById("msg").value != ""){
+      alert(document.getElementById("msg").value);
+    }
+}
+</script>
+<header id="header">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+
+    </button>
+    <div class="logo_header">
+        <a href="/index.html">
+        <img src="/image/logo-ti2.png" alt="Logo">
+      </a>
+    </div>
+    <div class="navigation_header" id="navigation_header">
+        <button onclick="toggleSidebar()" class="btn_icon_header" id="btn2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+        </button>
+        <a href="/crud_jogo.html">Jogos</a>
+        <a href="/crudUser.html">Usuários</a>
+        <a href="/pesquisa.html">Search</a>
+        <a href="/usuario.html">Account</a>
+    </div>
+</header>
+
+<body id="pag">
+    <table width="80%" bgcolor="#f3f3f3" align="center">
+    <tr>
+    <td align="left"><font size="+2">Novo Jogo</b></font></td>
+    <td><input type="hidden" id="msg" name="msg" value=""></td>
+    </tr>
+    </table>
+    <br>
+   
+    <p ADICIONE></p>
+    
+    <LISTAR-PRODUTO>
+
+<style>
+* {
+	box-sizing: border-box;
+}header{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #09081C;
+  background-size: cover;
+  color: white;
+  height: 90px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 1px 4px whitesmoke; 
+  justify-content: space-between;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.logo_header a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.btn_icon_header{
+  background-color: transparent;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.navigation_header{
+  display: flex;
+  gap: 3em;
+  z-index: 2;
+}
+
+.navigation_header a{
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 1s;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .btn_icon_header{
+      display: block;
+      color: white;
+  }
+
+  #btn2{
+    color: black;
+  }
+
+  .navigation_header{
+      position: absolute;
+      flex-direction: column;
+      top: 0;
+      background-color: whitesmoke;
+      height: 100%;
+      width: 35vw;
+      padding: 1em;
+      animation-duration: 1s;
+      margin-left: -100vw;
+  }
+
+  .navigation_header a{
+      text-decoration: none;
+      color: black;
+      transition: 1s;
+      font-weight: bold;
+  }
+
+
+  @keyframes showSidebar {
+      from {margin-left: -100vw;}
+      top {margin-left: -10vw;}
+  }
+}
+body {
+	background-color: white;
+}
+
+
+.input--main__style {
+	background-color: #00FF00;
+}
+
+.input--button {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: medium;
+	border-color: transparent;
+	display: block;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.input--register {
+	display: inline;
+}
+
+input {
+	display: block;
+	border-radius: 7px;
+	padding: 10px;
+	border-style: solid;
+	border-color: lightgray;
+	color: black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+form p {
+	text-align: initial;
+	display: inline;
+	margin-left: 15px;
+}
+
+.p--nomargin {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+
+</style>
+</body>
+</html>
