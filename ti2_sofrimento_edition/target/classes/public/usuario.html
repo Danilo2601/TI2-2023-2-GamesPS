@@ -19,6 +19,145 @@
 
 
 <body>
+	<style>
+		
+		
+		/* ------------------------------------------------------------------ */
+/* Card */
+.slider {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+
+.fotini {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.wish{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+  padding: 1px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: normal;
+  gap: 20px;
+}
+
+body .wish{
+  width: 100%;
+  /* margin: 0 10px; */
+  border-top:1px solid #cfcfcf;
+  padding: 10px;
+  padding-bottom:0px ;
+  background: #09081C;
+  /* border-radius: 5px; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: normal;
+  gap: 20px;
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+		
+		/* Style the counter cards */
+.cardio {
+  width: 300px;
+  aspect-ratio: 16/9;
+  padding: 0px;
+  margin: 0px;
+  background-color:#cfcfcf;
+}
+
+/* Estilo para a barra de jogo */
+.barra-azul {
+  border-bottom: #144190 5px solid;
+}
+
+/* -------------------------------------------------------- */
+/* houver */
+
+.cardio::before,
+.cardio::after {
+  content: "";
+  width: 100%;
+  aspect-ratio: 16/9;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  transform-origin: left top;
+  transform: scaleX(0);
+  transition: all var(--cover-timing) var(--cover-ease);
+}
+
+.cardio:hover a,
+.cardio:focus a {
+  transform: scale(1.1);
+  filter: brightness(0.6);
+  /* Adicionado para escurecer a imagem */
+}
+
+.cardio:nth-of-type(1) {
+  --highlight: coral;
+}
+
+.cardio:nth-of-type(2) {
+  --highlight: #56ffe5;
+}
+.cardio h3{
+  margin: 0;
+}
+.cardio h3 a{
+  border-radius: 5px;
+  width: 100%;
+  background-color: #c4c4c4;
+  aspect-ratio: 16/9;
+  margin:10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+		
+	</style>
 
     <HEADER>
 
@@ -29,27 +168,16 @@
                     <div class="col-md-2">
                         <img id="fotoPerfil" src="image/user2.png" class="img-fluid rounded-start" alt="img Perfil">
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10" style="width: 87.5%;">
                         <div class="card-header">
                             <h5 id="logado" style="color: #FFFFFF"></h5>
                         </div>
-                        <div class="card-body" style="color: #FFFFFF; background-color: #0A081D;">
-                            <label for="sobre">Sobre mim:</label>
-                        </div>
-                        <div class="card-footer" style="color: #FFFFFF; background-color: #0A081D;">
-                            <container id="show">
-                                <h6 id="about" style="color: #FFFFFF;"></h6>
-                                <button id="btn_editar"
-                                    style="background-color: #144290; color: #FFFFFF; border-style: none;">Editar</button>
-                            </container>
-                            <container id="edit">
-                                <textarea type="text" id="sobreMim"
-                                    style="min-width: 600px; min-height: 200px;"></textarea>
-                                <button id="btn_salvar"
-                                    style="background-color: #144290; color: #FFFFFF; border-style: none;">Salvar</button>
-                            </container>
-                            
-                        </div>
+                       
+                        
+                        <WISHLIST>
+                        
+						
+                        
                     </div>
                 </div>
                         <div class="d-flex justify-content-end">

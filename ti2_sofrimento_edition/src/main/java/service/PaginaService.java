@@ -3,11 +3,13 @@ package service;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import DAO.JogoDAO;
+import DAO.UserDAO;
 import model.Jogo;
+import model.User;
 import spark.Request;
 import spark.Response;
 import spark.Session;
@@ -28,24 +30,26 @@ public class PaginaService {
 	    String header;
 	    String estilar = "";
 	    Session session = request.session();
+	    UserDAO userDAO = new UserDAO();
 		if(session.attribute("key") != null) {
 			boolean gerenciador = session.attribute("gerenciador");
 			String usuario = session.attribute("usuario");
 			
 			header = loadHeader(gerenciador, usuario);
 			try {
-			Array a = session.attribute("desejos");
-			Integer[] ar = (Integer[])a.getArray();
-			for(int i = 0; i < ar.length; i++) 
+
+			User useratual = userDAO.getPorNome(usuario);
+				
+			ArrayList<Integer> a = useratual.getDesejos();
+			if(a.contains(id)) 
 			{
-				if(ar[i] == id) 
-				{
-					estilar += "#SAVE{"
-							+ "color: yellow;\r\n"
-							+ "	background-color: yellow;"
-							+ "}";
-					i = ar.length+1;
-				}
+				estilar += "#SAVE{\r\n"
+						+ "    background:none;\r\n"
+						+ "    border: none;\r\n"
+						+ "    color: yellow;\r\n"
+						+ "    float: right;\r\n"
+						+ "}";
+
 			}
 			}catch(Exception e) 
 			{
@@ -103,7 +107,7 @@ public class PaginaService {
 				+ "            </div>";
 		
 		form = form.replaceFirst("<div id=\"info\" class=\"col\"></div>", pegarJogo3);
-		form = form.replaceFirst("SUBSTITUA-ISSO", estilar);
+		form = form.replaceFirst("/*SUBSTITUA*/", estilar);
 		
 		return form;
 	}
