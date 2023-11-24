@@ -19,4 +19,4 @@ Uma plataforma de busca de jogos para otimizar o tempo do usuário na busca daqu
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+O código finalizado está no ti2_sofrimento_edition, as outras pastas foram da fase de desenvolvimento.
